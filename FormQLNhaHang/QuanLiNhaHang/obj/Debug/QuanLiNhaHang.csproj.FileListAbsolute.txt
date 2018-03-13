@@ -1,0 +1,10 @@
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb

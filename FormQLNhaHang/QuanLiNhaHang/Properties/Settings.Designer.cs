@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuanLyNhaHang.Properties
+namespace QuanLiNhaHang.Properties
 {
 
 
