@@ -16,7 +16,7 @@ namespace QuanLiNhaHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.FrmLogin());
+            Application.Run(new GUI.FrmAdmin());
         }
     }
 }

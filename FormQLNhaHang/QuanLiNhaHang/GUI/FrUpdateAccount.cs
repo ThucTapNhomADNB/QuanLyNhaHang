@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace QuanLiNhaHang.GUI
 {
-    public partial class FrmAdmin : Form
+    public partial class FrUpdateAccount : Form
     {
-        public FrmAdmin()
+        public FrUpdateAccount()
         {
             InitializeComponent();
         }
 
+        
     }
 }
