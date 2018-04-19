@@ -46,12 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\BanDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
+    <Compile Include="ENTITY\Ban.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmOrder.Designer.cs">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FrUpdateAccount.cs">
       <SubType>Form</SubType>
@@ -117,7 +125,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ENTITY\" />
     <Folder Include="REPORTS\" />
     <Folder Include="RESOURCE\" />
   </ItemGroup>
