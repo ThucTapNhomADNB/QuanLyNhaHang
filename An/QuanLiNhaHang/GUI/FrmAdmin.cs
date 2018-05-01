@@ -88,7 +88,7 @@ namespace QuanLiNhaHang.GUI
             DataTable dtmenu = tbmenuDAL.getTableMenu();
             TableMenu tbmenu = new TableMenu();
             tbmenu.Area = cbxarea.SelectedItem.ToString();
-            string filterExpression = string.Format("SELECT TableName FROM dbo.TableMenu WHERE Area='{0}'", tbmenu.Area);
+            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
             DataRow[] rows = dtmenu.Select(filterExpression);
             if (rows.Length == 0)
             {
