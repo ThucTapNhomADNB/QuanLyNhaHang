@@ -14,21 +14,33 @@ namespace QuanLiNhaHang.GUI
 {
     public partial class FrmAdmin : Form
     {
+        private int idCategory = 0;
+
         public FrmAdmin()
         {
             InitializeComponent();
             HienThiDSMenu();
             HienThiDSMenuCategory();
-            //LoadCate();
+            LoadMenuCate();
         }
 
         //Menu
         void HienThiDSMenu()
         {
             dgvmenu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            MenuDAL mnDAL = new MenuDAL();
-            dgvmenu.DataSource = mnDAL.LoadDS();
+            try
+            {
+                int idCate = Convert.ToInt16(cbMenuCate.SelectedValue.ToString());
+                MenuDAL mnDAL = new MenuDAL();
+                dgvmenu.DataSource = mnDAL.LoadDSMenuByCate(idCate);
 
+                this.idCategory = idCate;
+            }
+            catch
+            {
+
+            }
+          
         }
 
 
@@ -76,6 +88,32 @@ namespace QuanLiNhaHang.GUI
             }
             return false;
         }
+
+        private void LoadMenuCate()
+        {
+            MenuCateDAL mncDAL = new MenuCateDAL();
+            DataTable datacate = mncDAL.LoadDSCate();
+            cbMenuCate.DataSource = datacate;
+            cbMenuCate.DisplayMember = "Name";
+            cbMenuCate.ValueMember = "Id";
+
+        }
+
+        private void cbMenuCate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int idCate = Convert.ToInt16(cbMenuCate.SelectedValue.ToString());
+                MenuDAL mnDAL = new MenuDAL();
+                dgvmenu.DataSource = mnDAL.LoadDSMenuByCate(idCate);
+
+                this.idCategory = idCate;
+            }
+            catch
+            {
+
+            }
+        }
         private void dgvmenu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int numRow;
@@ -91,6 +129,7 @@ namespace QuanLiNhaHang.GUI
 
         private void btInsertThucDon_Click_1(object sender, EventArgs e)
         {
+            int idCate = Convert.ToInt16(cbMenuCate.SelectedValue.ToString());
             ENTITY.Menu mn = new ENTITY.Menu();
             MenuDAL mnDAL = new MenuDAL();
 
@@ -114,7 +153,7 @@ namespace QuanLiNhaHang.GUI
                     }
                     else
                     {
-                        mn.Price = Convert.ToInt16(txtGia.Text);
+                        mn.Price = Convert.ToInt32(txtGia.Text.ToString());
                         try
                         {
                             if (rbCon.Checked == false && rbHet.Checked == false)
@@ -126,7 +165,7 @@ namespace QuanLiNhaHang.GUI
                                 if (rbCon.Checked == true) mn.Status = "Còn";
                                 else if (rbHet.Checked == true) mn.Status = "Hết";
                                 mnDAL.insertMenu(mn);
-                                dgvmenu.DataSource = mnDAL.LoadDS();
+                                dgvmenu.DataSource = mnDAL.LoadDSMenuByCate(idCate);
                             }
                         }
                         catch
@@ -140,7 +179,7 @@ namespace QuanLiNhaHang.GUI
 
         private void btDeleteThucDon_Click(object sender, EventArgs e)
         {
-
+            int idCate = Convert.ToInt16(cbMenuCate.SelectedValue.ToString());
             MenuDAL mnDAL = new MenuDAL();
             if (txtMaMon.TextLength == 0)
             {
@@ -151,8 +190,17 @@ namespace QuanLiNhaHang.GUI
                 try
                 {
                     int id = Convert.ToInt16(txtMaMon.Text);
-                    mnDAL.deleteMenu(id);
-                    dgvmenu.DataSource = mnDAL.LoadDS();
+                    if(MessageBox.Show("Bạn có chắc muốn xóa món?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                    {
+                        mnDAL.deleteMenu(id);
+                        dgvmenu.DataSource = mnDAL.LoadDSMenuByCate(idCate);
+
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Có lỗi khi xóa món", "Thông báo");
+                    }
+
                 }
                 catch
                 {
@@ -164,6 +212,7 @@ namespace QuanLiNhaHang.GUI
 
         private void btEditThucDon_Click(object sender, EventArgs e)
         {
+            int idCate = Convert.ToInt16(cbMenuCate.SelectedValue.ToString());
             ENTITY.Menu mn = new ENTITY.Menu();
             mn.Id = Convert.ToInt16(txtMaMon.Text);
             MenuDAL mnDAL = new MenuDAL();
@@ -188,7 +237,8 @@ namespace QuanLiNhaHang.GUI
                     }
                     else
                     {
-                        mn.Price = Convert.ToInt16(txtGia.Text);
+                        mn.Price = Convert.ToInt32(txtGia.Text.ToString());
+                      
                         if (rbCon.Checked == false && rbHet.Checked == false)
                         {
                             MessageBox.Show("Chưa chọn tình trạng món ăn", " Lỗi ");
@@ -198,7 +248,7 @@ namespace QuanLiNhaHang.GUI
                             if (rbCon.Checked == true) mn.Status = "Còn";
                             else if (rbHet.Checked == true) mn.Status = "Hết";
                             mnDAL.UpdateMenu(mn);
-                            dgvmenu.DataSource = mnDAL.LoadDS();
+                            dgvmenu.DataSource = mnDAL.LoadDSMenuByCate(idCate);
                         }
                     }
                 }
@@ -290,10 +340,19 @@ namespace QuanLiNhaHang.GUI
             else
             {
                 try
+  
                 {
                     int Id = Convert.ToInt16(txtmadm.Text);
-                    mncDAL.deleteMenuCate(Id);
-                    dgvmenucate.DataSource = mncDAL.LoadDSCate();
+                    if (MessageBox.Show("Bạn có chắc muốn xóa món?", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                    {
+                        mncDAL.deleteMenuCate(Id);
+                        dgvmenucate.DataSource = mncDAL.LoadDSCate();
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Có lỗi khi xóa món", "Thông báo");
+                    }
+
                 }
                 catch
                 {
@@ -347,6 +406,8 @@ namespace QuanLiNhaHang.GUI
             MenuCateDAL mncDAL = new MenuCateDAL();
             dgvmenu.DataSource = mncDAL.searchMenuCate(searchtxt);
         }
+
+       
     }
 }
 

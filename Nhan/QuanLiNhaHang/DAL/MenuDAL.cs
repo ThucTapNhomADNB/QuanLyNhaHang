@@ -11,19 +11,29 @@ namespace QuanLiNhaHang.DAL
     class MenuDAL
     {
         DatabaseConnect dtConnect = new DatabaseConnect();
-        
-
-        public DataTable LoadDS()
+        //hien thi menu theo cate
+        public DataTable LoadDSMenuByCate(int idCate)
         {
-            string query = "SELECT * FROM  dbo.Menu ";
+            string query = String.Format( "SELECT mn.Id, mn.Name, mn.Price, mn.Status FROM Menu mn, MenuCategory mnc WHERE mn.Idcategory = mnc.Id and IdCategory ='{0}' ",idCate);
             return dtConnect.GETdata(query);
         }
-        
+
+        //public DataTable LoadDS()
+        //{
+        //    string query = "SELECT * FROM  dbo.Menu ";
+        //    return dtConnect.GETdata(query);
+        //}
+
         public void insertMenu( Menu mn)
         {
             string query = string.Format("INSERT Menu ( Name, Price, Status) VALUES (N'{0}', N'{1}', N'{2}')", mn.Name, mn.Price, mn.Status);
             
             dtConnect.ExecuteNonQuery(query);
+        }
+
+        internal object LoadDSMenuByCate(object idCate)
+        {
+            throw new NotImplementedException();
         }
 
         public void deleteMenu(int id)
@@ -44,6 +54,11 @@ namespace QuanLiNhaHang.DAL
         {
             string query = string.Format("SELECT * FROM Menu WHERE Name LIKE '%{0}%'", name);
             return dtConnect.GETdata(query);
+        }
+
+        internal object LoadDSMenuByCate()
+        {
+            throw new NotImplementedException();
         }
     }
 }
