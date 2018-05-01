@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,9 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\BanDAL.cs" />
+    <Compile Include="DAL\AccountDAL.cs" />
+    <Compile Include="DAL\BilDAL.cs" />
+    <Compile Include="DAL\BillInfoDAL.cs" />
+    <Compile Include="DAL\MenuCategoryDAL.cs" />
+    <Compile Include="DAL\MenuDAL.cs" />
+    <Compile Include="DAL\TableDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
-    <Compile Include="ENTITY\Ban.cs" />
+    <Compile Include="ENTITY\Account.cs" />
+    <Compile Include="ENTITY\Bill.cs" />
+    <Compile Include="ENTITY\BillInfo.cs" />
+    <Compile Include="ENTITY\Menu.cs" />
+    <Compile Include="ENTITY\MenuCategory.cs" />
+    <Compile Include="ENTITY\Table.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +101,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmOrder.resx">
+      <DependentUpon>FrmOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrUpdateAccount.resx">
       <DependentUpon>FrUpdateAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +141,10 @@
   <ItemGroup>
     <Folder Include="REPORTS\" />
     <Folder Include="RESOURCE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMAGE\table0.png" />
+    <Content Include="IMAGE\table1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
