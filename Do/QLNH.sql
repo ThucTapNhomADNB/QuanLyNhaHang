@@ -46,7 +46,5 @@ create table CT_HoaDon(
 	SoLuong int,
 	primary key (MaHD, MaMA)
 )
-
-
 go
 
