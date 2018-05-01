@@ -61,3 +61,4 @@ D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang
 D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.CoreCompileInputs.cache
 D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmStatis.resources
