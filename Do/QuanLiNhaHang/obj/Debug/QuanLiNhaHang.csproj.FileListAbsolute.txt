@@ -32,3 +32,13 @@ C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\bin\Debug\QuanLiNh
 C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
 >>>>>>> 164dbc647911b856ad718b56d55d748eeeec219a
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Do\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
