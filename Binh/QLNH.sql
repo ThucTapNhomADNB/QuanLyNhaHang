@@ -50,3 +50,37 @@ create table CT_HoaDon(
 
 go
 
+/*create trigger TotalHD(@MaHD int)
+returns int 
+as 
+begin
+declare @total int;
+set @total= SUM(Gia) 
+		   from MonAn 
+		   where(select MaMA 
+				  from CT_HoaDon 
+				  where MaHD=@MaHD)
+
+select SUM(Gia) from MonAn */
+
+create trigger TongHD
+on HoaDon
+for update, insert
+as
+begin
+declare @tong int
+select
+@tong=SUM(Gia) from MonAn 
+
+BEGIN
+ DECLARE @age int
+ DECLARE @EmployeeID int
+ SELECT
+  @age=YEAR(GETDATE())-year(BirthDate),
+  @EmployeeID=EmployeeID
+ FROM inserted
+ IF UPDATE (BirthDate)
+ UPDATE Employees
+  SET Age = @age
+ WHERE EmployeeID=@EmployeeID
+END
