@@ -32,12 +32,13 @@
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuThongKe = new System.Windows.Forms.ToolStripMenuItem();
             this.panelChinh = new System.Windows.Forms.Panel();
             this.tabChonBan = new System.Windows.Forms.TabControl();
             this.tabBanTrong = new System.Windows.Forms.TabPage();
-            this.tabBan = new System.Windows.Forms.TabPage();
             this.flpDSBanTrong = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabBan = new System.Windows.Forms.TabPage();
+            this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelChinh.SuspendLayout();
             this.tabChonBan.SuspendLayout();
@@ -50,7 +51,8 @@
             this.hệThốngToolStripMenuItem,
             this.thôngTinTàiKhoảnToolStripMenuItem,
             this.đổiMậtKhẩuToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.MnuThongKe,
+            this.thốngKêToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(884, 24);
@@ -75,11 +77,12 @@
             this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Chỉnh sửa tài khoản";
             // 
-            // helpToolStripMenuItem
+            // MnuThongKe
             // 
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.MnuThongKe.Name = "MnuThongKe";
+            this.MnuThongKe.Size = new System.Drawing.Size(69, 20);
+            this.MnuThongKe.Text = "Thống kê";
+            this.MnuThongKe.Click += new System.EventHandler(this.MnuThongKeClick);
             // 
             // panelChinh
             // 
@@ -113,6 +116,14 @@
             this.tabBanTrong.Text = "Danh Sách Bàn Trống";
             this.tabBanTrong.UseVisualStyleBackColor = true;
             // 
+            // flpDSBanTrong
+            // 
+            this.flpDSBanTrong.AutoScroll = true;
+            this.flpDSBanTrong.Location = new System.Drawing.Point(7, 47);
+            this.flpDSBanTrong.Name = "flpDSBanTrong";
+            this.flpDSBanTrong.Size = new System.Drawing.Size(832, 264);
+            this.flpDSBanTrong.TabIndex = 0;
+            // 
             // tabBan
             // 
             this.tabBan.Location = new System.Drawing.Point(4, 22);
@@ -123,13 +134,12 @@
             this.tabBan.Text = "Danh Sách Bàn Đã Đặt";
             this.tabBan.UseVisualStyleBackColor = true;
             // 
-            // flpDSBanTrong
+            // thốngKêToolStripMenuItem
             // 
-            this.flpDSBanTrong.AutoScroll = true;
-            this.flpDSBanTrong.Location = new System.Drawing.Point(7, 47);
-            this.flpDSBanTrong.Name = "flpDSBanTrong";
-            this.flpDSBanTrong.Size = new System.Drawing.Size(832, 264);
-            this.flpDSBanTrong.TabIndex = 0;
+            this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.thốngKêToolStripMenuItem.Text = "Trợ giúp";
+            this.thốngKêToolStripMenuItem.Click += new System.EventHandler(this.thốngKêToolStripMenuItem_Click);
             // 
             // MainFrame
             // 
@@ -159,10 +169,11 @@
         private System.Windows.Forms.Panel panelChinh;
         private System.Windows.Forms.ToolStripMenuItem thôngTinTàiKhoảnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MnuThongKe;
         private System.Windows.Forms.TabControl tabChonBan;
         private System.Windows.Forms.TabPage tabBanTrong;
         private System.Windows.Forms.TabPage tabBan;
         private System.Windows.Forms.FlowLayoutPanel flpDSBanTrong;
+        private System.Windows.Forms.ToolStripMenuItem thốngKêToolStripMenuItem;
     }
 }

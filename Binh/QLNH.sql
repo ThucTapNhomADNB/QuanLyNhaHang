@@ -63,24 +63,33 @@ set @total= SUM(Gia)
 
 select SUM(Gia) from MonAn */
 
-create trigger TongHD
-on HoaDon
-for update, insert
+/*create function TongTien(@MaHD int)
+returns int
 as
 begin
-declare @tong int
-select
-@tong=SUM(Gia) from MonAn 
+declare @tong int;
+set @tong= SUM(Gia*SoLuong) 
+from MonAn, HoaDon, CT_HoaDon 
+where MonAn.MaMA=CT_HoaDon.MaMA and HoaDon.MaHD=CT_HoaDon.MaHD=@MaHD
+group by MaMA, MaHD
+set TongTien=@tong from HoaDon
+end
 
-BEGIN
- DECLARE @age int
- DECLARE @EmployeeID int
- SELECT
-  @age=YEAR(GETDATE())-year(BirthDate),
-  @EmployeeID=EmployeeID
- FROM inserted
- IF UPDATE (BirthDate)
- UPDATE Employees
-  SET Age = @age
- WHERE EmployeeID=@EmployeeID
-END
+create function TotalPrice(@IdBill int)
+returns int
+as
+begin 
+declare @total int
+update Bill set Total = SUM(Gia*Soluong)
+where id =
+select * from MenuCategory
+end
+
+create proc DoanhThuNgay(@ngay date)
+as
+begin
+declare @DTNgay int;
+set @DTNgay = SUM(TongTien)
+from HoaDon
+where Ngay=@ngay
+group by Ngay*/

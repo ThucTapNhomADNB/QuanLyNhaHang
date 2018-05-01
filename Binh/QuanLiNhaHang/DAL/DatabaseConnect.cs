@@ -13,7 +13,7 @@ namespace QuanLiNhaHang.DAL
     {
         public SqlConnection dataConection()
         {
-            return new SqlConnection(@"Data Source=.;Initial Catalog=QLNH;Integrated Security=True");
+            return new SqlConnection(@"Data Source=.;Initial Catalog=QLNHAHANG;Integrated Security=True");
         }
         public DataTable GETdata(string querySQL)
         {

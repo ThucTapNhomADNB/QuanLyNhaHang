@@ -16,5 +16,16 @@ namespace QuanLiNhaHang.GUI
         {
             InitializeComponent();
         }
+
+        private void thốngKêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MnuThongKeClick(object sender, EventArgs e)
+        {
+            FrmStatis FrmStatis = new FrmStatis();
+            FrmStatis.ShowDialog();
+        }
     }
 }

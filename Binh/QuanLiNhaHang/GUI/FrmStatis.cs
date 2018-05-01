@@ -12,24 +12,28 @@ using QuanLiNhaHang.ENTITY;
 
 namespace QuanLiNhaHang.GUI
 {
-    public partial class FrmAdmin : Form
+    public partial class FrmStatis : Form
     {
-        public FrmAdmin()
+        public FrmStatis()
         {
             InitializeComponent();
         }
 
-        private void btThongKe_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void ThongKe()
         {
             dvwTotal.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             StatisDAL stDAL = new StatisDAL();
-            dvwTotal.DataSource = stDAL.LoadDS(dtFrom.Value, dtTo.Value);
+            dvwTotal.DataSource = stDAL.LoadDS(DtFrom.Value, DtTo.Value);
             int total = 0;
-            foreach (DataRow row in dvwTotal.Rows)
+            foreach(DataRow row in dvwTotal.Rows)
             {
                 total += Convert.ToInt32(row.ItemArray[4].ToString());
             }
-            lblTotal.Text = total.ToString();
+            txtTotal.Text = total.ToString();
         }
     }
 }

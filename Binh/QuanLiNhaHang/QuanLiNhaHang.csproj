@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="DAL\BanDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
+    <Compile Include="DAL\StatisDAL.cs" />
     <Compile Include="ENTITY\Ban.cs" />
+    <Compile Include="ENTITY\Statis.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +62,12 @@
     </Compile>
     <Compile Include="GUI\FrmOrder.Designer.cs">
       <DependentUpon>FrmOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmStatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmStatis.Designer.cs">
+      <DependentUpon>FrmStatis.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\FrUpdateAccount.cs">
       <SubType>Form</SubType>
@@ -89,6 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmStatis.resx">
+      <DependentUpon>FrmStatis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrUpdateAccount.resx">
       <DependentUpon>FrUpdateAccount.cs</DependentUpon>
