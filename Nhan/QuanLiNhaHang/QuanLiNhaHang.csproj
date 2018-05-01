@@ -48,8 +48,11 @@
   <ItemGroup>
     <Compile Include="DAL\BanDAL.cs" />
     <Compile Include="DAL\DatabaseConnect.cs" />
+    <Compile Include="DAL\MenuCateDAL.cs" />
+    <Compile Include="DAL\MenuDAL.cs" />
     <Compile Include="ENTITY\Ban.cs" />
-    <Compile Include="ENTITY\MonAn.cs" />
+    <Compile Include="ENTITY\Menu.cs" />
+    <Compile Include="ENTITY\MenuCate.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

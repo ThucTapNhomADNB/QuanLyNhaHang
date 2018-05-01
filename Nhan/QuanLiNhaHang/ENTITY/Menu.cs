@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace QuanLiNhaHang.ENTITY
 {
-    class MonAn
+    class Menu
     {
         private int id;
         private string name;
-        private int price;
-        private int status;
+        private float price;
+        private string status;
 
     //       Id int IDENTITY(1,1) PRIMARY KEY,
     //   Name nvarchar(50),
@@ -41,7 +41,7 @@ namespace QuanLiNhaHang.ENTITY
             }
         }
 
-        public int Price
+        public float Price
         {
             get
             {
@@ -52,7 +52,7 @@ namespace QuanLiNhaHang.ENTITY
                 price = value;
             }
         }
-        public int Status
+        public string Status
         {
             get
             {

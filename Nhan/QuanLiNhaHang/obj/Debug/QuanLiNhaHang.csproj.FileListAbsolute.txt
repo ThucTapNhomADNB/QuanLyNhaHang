@@ -36,3 +36,6 @@ C:\Users\ThanhNhan\Desktop\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLog
 C:\Users\ThanhNhan\Desktop\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
 C:\Users\ThanhNhan\Desktop\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
 C:\Users\ThanhNhan\Desktop\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Nhan\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
