@@ -20,17 +20,20 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLyNhaHang\FormQLNha
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BTL\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.cache
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.CoreCompileInputs.cache
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
-D:\Tài liệu\TT Nhóm\QuanLyNhaHang\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\FormQLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\FormQLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.cache
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.CoreCompileInputs.cache
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb

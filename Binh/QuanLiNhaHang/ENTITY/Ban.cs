@@ -6,61 +6,62 @@ using System.Threading.Tasks;
 
 namespace QuanLiNhaHang.ENTITY
 {
-    class MonAn
+    class Ban
     {
-        private int id;
-        private string name;
-        private int price;
-        private int status;
+        private int maBan;
+        private string tenBan;
+        private int trangThai;
+        private string khuVuc;
 
-    //       Id int IDENTITY(1,1) PRIMARY KEY,
-    //   Name nvarchar(50),
-	//  Price int,
-	//  Status int, --1: còn, 0: hết
-        public int Id
+        public int MaBan
         {
             get
             {
-                return id;
+                return maBan;
             }
+
             set
             {
-                id = value;
+                maBan = value;
             }
         }
 
-        public string Name
+        public string TenBan
         {
             get
             {
-                return name;
+                return tenBan;
             }
+
             set
             {
-                name = value;
+                tenBan = value;
             }
         }
 
-        public int Price
+        public int TrangThai
         {
             get
             {
-                return price;
+                return trangThai;
             }
+
             set
             {
-                price = value;
+                trangThai = value;
             }
         }
-        public int Status
+
+        public string KhuVuc
         {
             get
             {
-                return status;
+                return khuVuc;
             }
+
             set
             {
-                status = value;
+                khuVuc = value;
             }
         }
     }
