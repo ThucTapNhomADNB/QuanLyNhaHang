@@ -48,12 +48,12 @@
             this.lbNameMonAn = new System.Windows.Forms.Label();
             this.tabDoanhThu = new System.Windows.Forms.TabPage();
             this.pnThongKeView = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvwTotal = new System.Windows.Forms.DataGridView();
             this.pnThongKeChucNang = new System.Windows.Forms.Panel();
             this.btThongKe = new System.Windows.Forms.Button();
-            this.dateTimeEnd = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeBegin = new System.Windows.Forms.DateTimePicker();
-            this.lbTotal = new System.Windows.Forms.Label();
+            this.dtTo = new System.Windows.Forms.DateTimePicker();
+            this.dtFrom = new System.Windows.Forms.DateTimePicker();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.lbThongKe3 = new System.Windows.Forms.Label();
             this.lbThongKe2 = new System.Windows.Forms.Label();
             this.lbThongke1 = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@
             this.panelEdit.SuspendLayout();
             this.tabDoanhThu.SuspendLayout();
             this.pnThongKeView.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvwTotal)).BeginInit();
             this.pnThongKeChucNang.SuspendLayout();
             this.tabAccount.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -304,31 +304,31 @@
             this.pnThongKeView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnThongKeView.Controls.Add(this.dataGridView1);
+            this.pnThongKeView.Controls.Add(this.dvwTotal);
             this.pnThongKeView.Location = new System.Drawing.Point(8, 93);
             this.pnThongKeView.Name = "pnThongKeView";
             this.pnThongKeView.Size = new System.Drawing.Size(862, 334);
             this.pnThongKeView.TabIndex = 1;
             // 
-            // dataGridView1
+            // dvwTotal
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dvwTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(7, 13);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(852, 318);
-            this.dataGridView1.TabIndex = 0;
+            this.dvwTotal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvwTotal.Location = new System.Drawing.Point(7, 13);
+            this.dvwTotal.Name = "dvwTotal";
+            this.dvwTotal.Size = new System.Drawing.Size(852, 318);
+            this.dvwTotal.TabIndex = 0;
             // 
             // pnThongKeChucNang
             // 
             this.pnThongKeChucNang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnThongKeChucNang.Controls.Add(this.btThongKe);
-            this.pnThongKeChucNang.Controls.Add(this.dateTimeEnd);
-            this.pnThongKeChucNang.Controls.Add(this.dateTimeBegin);
-            this.pnThongKeChucNang.Controls.Add(this.lbTotal);
+            this.pnThongKeChucNang.Controls.Add(this.dtTo);
+            this.pnThongKeChucNang.Controls.Add(this.dtFrom);
+            this.pnThongKeChucNang.Controls.Add(this.lblTotal);
             this.pnThongKeChucNang.Controls.Add(this.lbThongKe3);
             this.pnThongKeChucNang.Controls.Add(this.lbThongKe2);
             this.pnThongKeChucNang.Controls.Add(this.lbThongke1);
@@ -346,30 +346,33 @@
             this.btThongKe.TabIndex = 6;
             this.btThongKe.Text = "Thống kê ";
             this.btThongKe.UseVisualStyleBackColor = true;
+            this.btThongKe.Click += new System.EventHandler(this.btThongKe_Click);
             // 
-            // dateTimeEnd
+            // dtTo
             // 
-            this.dateTimeEnd.Location = new System.Drawing.Point(133, 45);
-            this.dateTimeEnd.Name = "dateTimeEnd";
-            this.dateTimeEnd.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeEnd.TabIndex = 5;
+            this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtTo.Location = new System.Drawing.Point(133, 45);
+            this.dtTo.Name = "dtTo";
+            this.dtTo.Size = new System.Drawing.Size(200, 20);
+            this.dtTo.TabIndex = 5;
             // 
-            // dateTimeBegin
+            // dtFrom
             // 
-            this.dateTimeBegin.Location = new System.Drawing.Point(133, 10);
-            this.dateTimeBegin.Name = "dateTimeBegin";
-            this.dateTimeBegin.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeBegin.TabIndex = 4;
+            this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFrom.Location = new System.Drawing.Point(133, 10);
+            this.dtFrom.Name = "dtFrom";
+            this.dtFrom.Size = new System.Drawing.Size(200, 20);
+            this.dtFrom.TabIndex = 4;
             // 
-            // lbTotal
+            // lblTotal
             // 
-            this.lbTotal.AutoSize = true;
-            this.lbTotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotal.Location = new System.Drawing.Point(765, 30);
-            this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(65, 19);
-            this.lbTotal.TabIndex = 3;
-            this.lbTotal.Text = "1000000";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(765, 30);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(17, 19);
+            this.lblTotal.TabIndex = 3;
+            this.lblTotal.Text = "0";
             // 
             // lbThongKe3
             // 
@@ -643,7 +646,7 @@
             this.panelEdit.PerformLayout();
             this.tabDoanhThu.ResumeLayout(false);
             this.pnThongKeView.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvwTotal)).EndInit();
             this.pnThongKeChucNang.ResumeLayout(false);
             this.pnThongKeChucNang.PerformLayout();
             this.tabAccount.ResumeLayout(false);
@@ -678,15 +681,15 @@
         private System.Windows.Forms.Label lbTinhTrangMonAn;
         private System.Windows.Forms.Label lbNameMonAn;
         private System.Windows.Forms.Panel pnThongKeView;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvwTotal;
         private System.Windows.Forms.Panel pnThongKeChucNang;
-        private System.Windows.Forms.Label lbTotal;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lbThongKe3;
         private System.Windows.Forms.Label lbThongKe2;
         private System.Windows.Forms.Label lbThongke1;
         private System.Windows.Forms.Button btThongKe;
-        private System.Windows.Forms.DateTimePicker dateTimeEnd;
-        private System.Windows.Forms.DateTimePicker dateTimeBegin;
+        private System.Windows.Forms.DateTimePicker dtTo;
+        private System.Windows.Forms.DateTimePicker dtFrom;
         private System.Windows.Forms.TabPage tabAccount;
         private System.Windows.Forms.Label lbTaikhoan3;
         private System.Windows.Forms.Label lbTaikhoan8;

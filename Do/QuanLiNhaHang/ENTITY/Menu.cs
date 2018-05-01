@@ -6,23 +6,21 @@ using System.Threading.Tasks;
 
 namespace QuanLiNhaHang.ENTITY
 {
-    class MonAn
+    class Menu
     {
-        private int id;
-        private string name;
-        private int price;
-        private int status;
-
-    //       Id int IDENTITY(1,1) PRIMARY KEY,
-    //   Name nvarchar(50),
-	//  Price int,
-	//  Status int, --1: còn, 0: hết
+        int id;
+        string name;
+        int price;
+        int status;
+        int idCategory;
+        
         public int Id
         {
             get
             {
                 return id;
             }
+
             set
             {
                 id = value;
@@ -35,6 +33,7 @@ namespace QuanLiNhaHang.ENTITY
             {
                 return name;
             }
+
             set
             {
                 name = value;
@@ -47,20 +46,36 @@ namespace QuanLiNhaHang.ENTITY
             {
                 return price;
             }
+
             set
             {
                 price = value;
             }
         }
+
         public int Status
         {
             get
             {
                 return status;
             }
+
             set
             {
                 status = value;
+            }
+        }
+
+        public int IdCategory
+        {
+            get
+            {
+                return idCategory;
+            }
+
+            set
+            {
+                idCategory = value;
             }
         }
     }
