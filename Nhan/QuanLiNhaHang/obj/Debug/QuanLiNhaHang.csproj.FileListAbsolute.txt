@@ -45,3 +45,6 @@ C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Nhan\QuanLiNhaHang\bin\Debug\QuanLi
 C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
 >>>>>>> 6d0a4e7cd15e4388867e85156a83f45680e98af1
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\Nhan\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\Nhan\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb

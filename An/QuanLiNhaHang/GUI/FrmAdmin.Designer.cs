@@ -51,6 +51,8 @@
             this.tabDanhMuc = new System.Windows.Forms.TabPage();
             this.tabBan = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbnotice1 = new System.Windows.Forms.Label();
+            this.lbloitablename = new System.Windows.Forms.Label();
             this.btnok = new System.Windows.Forms.Button();
             this.tbstatus = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -90,8 +92,6 @@
             this.lbTaikhoan6 = new System.Windows.Forms.Label();
             this.lbTaikhoan5 = new System.Windows.Forms.Label();
             this.lbTaiKhoan1 = new System.Windows.Forms.Label();
-            this.lbloitablename = new System.Windows.Forms.Label();
-            this.lbnotice1 = new System.Windows.Forms.Label();
             this.tabAdmin.SuspendLayout();
             this.tabThucDon.SuspendLayout();
             this.panelSearch.SuspendLayout();
@@ -374,6 +374,26 @@
             this.panel1.Size = new System.Drawing.Size(880, 424);
             this.panel1.TabIndex = 0;
             // 
+            // lbnotice1
+            // 
+            this.lbnotice1.AutoSize = true;
+            this.lbnotice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnotice1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbnotice1.Location = new System.Drawing.Point(404, 375);
+            this.lbnotice1.Name = "lbnotice1";
+            this.lbnotice1.Size = new System.Drawing.Size(37, 16);
+            this.lbnotice1.TabIndex = 25;
+            this.lbnotice1.Text = "fgnm";
+            // 
+            // lbloitablename
+            // 
+            this.lbloitablename.AutoSize = true;
+            this.lbloitablename.Location = new System.Drawing.Point(468, 130);
+            this.lbloitablename.Name = "lbloitablename";
+            this.lbloitablename.Size = new System.Drawing.Size(68, 13);
+            this.lbloitablename.TabIndex = 24;
+            this.lbloitablename.Text = "dfghjkcvbnm";
+            // 
             // btnok
             // 
             this.btnok.Location = new System.Drawing.Point(439, 329);
@@ -391,6 +411,7 @@
             this.tbstatus.Name = "tbstatus";
             this.tbstatus.Size = new System.Drawing.Size(150, 26);
             this.tbstatus.TabIndex = 22;
+            this.tbstatus.TextChanged += new System.EventHandler(this.tbstatus_TextChanged);
             // 
             // label4
             // 
@@ -401,6 +422,7 @@
             this.label4.Size = new System.Drawing.Size(60, 19);
             this.label4.TabIndex = 21;
             this.label4.Text = "Status :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // tbtablename
             // 
@@ -409,6 +431,7 @@
             this.tbtablename.Name = "tbtablename";
             this.tbtablename.Size = new System.Drawing.Size(150, 26);
             this.tbtablename.TabIndex = 20;
+            this.tbtablename.TextChanged += new System.EventHandler(this.tbtablename_TextChanged);
             // 
             // label3
             // 
@@ -419,6 +442,7 @@
             this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 19;
             this.label3.Text = "TableName :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -429,6 +453,7 @@
             this.label2.Size = new System.Drawing.Size(159, 36);
             this.label2.TabIndex = 5;
             this.label2.Text = "Thêm Bàn";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // cbxarea
             // 
@@ -441,6 +466,7 @@
             this.cbxarea.Name = "cbxarea";
             this.cbxarea.Size = new System.Drawing.Size(150, 21);
             this.cbxarea.TabIndex = 4;
+            this.cbxarea.SelectedIndexChanged += new System.EventHandler(this.cbxarea_SelectedIndexChanged);
             // 
             // lbarea
             // 
@@ -451,6 +477,7 @@
             this.lbarea.Size = new System.Drawing.Size(51, 19);
             this.lbarea.TabIndex = 3;
             this.lbarea.Text = "Area :";
+            this.lbarea.Click += new System.EventHandler(this.lbarea_Click);
             // 
             // tabDoanhThu
             // 
@@ -602,6 +629,7 @@
             this.lbloiphanquyen.Name = "lbloiphanquyen";
             this.lbloiphanquyen.Size = new System.Drawing.Size(0, 16);
             this.lbloiphanquyen.TabIndex = 23;
+            this.lbloiphanquyen.Text = "dfg";
             // 
             // lbnotice
             // 
@@ -612,6 +640,7 @@
             this.lbnotice.Name = "lbnotice";
             this.lbnotice.Size = new System.Drawing.Size(0, 16);
             this.lbnotice.TabIndex = 22;
+            this.lbnotice.Text = "dfghnmvb";
             // 
             // lbloirepassword
             // 
@@ -622,6 +651,7 @@
             this.lbloirepassword.Name = "lbloirepassword";
             this.lbloirepassword.Size = new System.Drawing.Size(0, 16);
             this.lbloirepassword.TabIndex = 21;
+            this.lbloirepassword.Text = "cvbn";
             // 
             // lbloipassword
             // 
@@ -632,6 +662,7 @@
             this.lbloipassword.Name = "lbloipassword";
             this.lbloipassword.Size = new System.Drawing.Size(0, 16);
             this.lbloipassword.TabIndex = 20;
+            this.lbloipassword.Text = "bn";
             // 
             // lbloiusername
             // 
@@ -642,6 +673,7 @@
             this.lbloiusername.Name = "lbloiusername";
             this.lbloiusername.Size = new System.Drawing.Size(0, 16);
             this.lbloiusername.TabIndex = 19;
+            this.lbloiusername.Text = "fghj";
             // 
             // tbdisplayname
             // 
@@ -650,6 +682,7 @@
             this.tbdisplayname.Name = "tbdisplayname";
             this.tbdisplayname.Size = new System.Drawing.Size(150, 26);
             this.tbdisplayname.TabIndex = 18;
+            this.tbdisplayname.TextChanged += new System.EventHandler(this.tbdisplayname_TextChanged);
             // 
             // label1
             // 
@@ -660,6 +693,7 @@
             this.label1.Size = new System.Drawing.Size(109, 19);
             this.label1.TabIndex = 17;
             this.label1.Text = "DisplayName :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btAddAccount
             // 
@@ -680,18 +714,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(203, 61);
             this.panel2.TabIndex = 15;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // rbNhanVien
             // 
             this.rbNhanVien.AutoSize = true;
             this.rbNhanVien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNhanVien.Location = new System.Drawing.Point(76, 25);
+            this.rbNhanVien.Location = new System.Drawing.Point(87, 25);
             this.rbNhanVien.Name = "rbNhanVien";
             this.rbNhanVien.Size = new System.Drawing.Size(88, 23);
             this.rbNhanVien.TabIndex = 14;
             this.rbNhanVien.TabStop = true;
             this.rbNhanVien.Text = "Nhân viên";
             this.rbNhanVien.UseVisualStyleBackColor = true;
+            this.rbNhanVien.CheckedChanged += new System.EventHandler(this.rbNhanVien_CheckedChanged);
             // 
             // rbAdmin
             // 
@@ -704,6 +740,7 @@
             this.rbAdmin.TabStop = true;
             this.rbAdmin.Text = "Admin";
             this.rbAdmin.UseVisualStyleBackColor = true;
+            this.rbAdmin.CheckedChanged += new System.EventHandler(this.rbAdmin_CheckedChanged);
             // 
             // tbRepass
             // 
@@ -713,6 +750,7 @@
             this.tbRepass.Size = new System.Drawing.Size(150, 26);
             this.tbRepass.TabIndex = 12;
             this.tbRepass.UseSystemPasswordChar = true;
+            this.tbRepass.TextChanged += new System.EventHandler(this.tbRepass_TextChanged);
             // 
             // tbPass
             // 
@@ -722,6 +760,7 @@
             this.tbPass.Size = new System.Drawing.Size(150, 26);
             this.tbPass.TabIndex = 11;
             this.tbPass.UseSystemPasswordChar = true;
+            this.tbPass.TextChanged += new System.EventHandler(this.tbPass_TextChanged);
             // 
             // tbUsername
             // 
@@ -730,6 +769,7 @@
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(150, 26);
             this.tbUsername.TabIndex = 10;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // lbTaikhoan8
             // 
@@ -740,6 +780,7 @@
             this.lbTaikhoan8.Size = new System.Drawing.Size(86, 19);
             this.lbTaikhoan8.TabIndex = 5;
             this.lbTaikhoan8.Text = "Phân quyền";
+            this.lbTaikhoan8.Click += new System.EventHandler(this.lbTaikhoan8_Click);
             // 
             // lbTaikhoan7
             // 
@@ -750,6 +791,7 @@
             this.lbTaikhoan7.Size = new System.Drawing.Size(100, 19);
             this.lbTaikhoan7.TabIndex = 4;
             this.lbTaikhoan7.Text = "Repassword :";
+            this.lbTaikhoan7.Click += new System.EventHandler(this.lbTaikhoan7_Click);
             // 
             // lbTaikhoan6
             // 
@@ -760,6 +802,7 @@
             this.lbTaikhoan6.Size = new System.Drawing.Size(81, 19);
             this.lbTaikhoan6.TabIndex = 3;
             this.lbTaikhoan6.Text = "Password :";
+            this.lbTaikhoan6.Click += new System.EventHandler(this.lbTaikhoan6_Click);
             // 
             // lbTaikhoan5
             // 
@@ -770,6 +813,7 @@
             this.lbTaikhoan5.Size = new System.Drawing.Size(86, 19);
             this.lbTaikhoan5.TabIndex = 2;
             this.lbTaikhoan5.Text = "Username :";
+            this.lbTaikhoan5.Click += new System.EventHandler(this.lbTaikhoan5_Click);
             // 
             // lbTaiKhoan1
             // 
@@ -780,24 +824,7 @@
             this.lbTaiKhoan1.Size = new System.Drawing.Size(375, 36);
             this.lbTaiKhoan1.TabIndex = 0;
             this.lbTaiKhoan1.Text = "Thêm tài khoản nhân viên";
-            // 
-            // lbloitablename
-            // 
-            this.lbloitablename.AutoSize = true;
-            this.lbloitablename.Location = new System.Drawing.Point(468, 130);
-            this.lbloitablename.Name = "lbloitablename";
-            this.lbloitablename.Size = new System.Drawing.Size(0, 13);
-            this.lbloitablename.TabIndex = 24;
-            // 
-            // lbnotice1
-            // 
-            this.lbnotice1.AutoSize = true;
-            this.lbnotice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbnotice1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbnotice1.Location = new System.Drawing.Point(404, 375);
-            this.lbnotice1.Name = "lbnotice1";
-            this.lbnotice1.Size = new System.Drawing.Size(0, 13);
-            this.lbnotice1.TabIndex = 25;
+            this.lbTaiKhoan1.Click += new System.EventHandler(this.lbTaiKhoan1_Click);
             // 
             // FrmAdmin
             // 
