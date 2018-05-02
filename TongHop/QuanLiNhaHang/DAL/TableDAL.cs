@@ -97,5 +97,15 @@ namespace QuanLiNhaHang.DAL
             string query = string.Format("INSERT dbo.TableMenu(TableName, Status, Area) VALUES('{0}', {1}, '{2}')", tb.TableName, tb.Status, tb.Area);
             dbConnect.ExecuteNonQuery(query);
         }
+        public void editTableMenu(Table tb)
+        {
+            string query = string.Format("UPDATE dbo.TableMenu set TableName=N'{0}',Status={1}, Area=N'{2}'", tb.TableName, tb.Status, tb.Area);
+            dbConnect.ExecuteNonQuery(query);
+        }
+        public void deleteTableMenu(int id)
+        {
+            string query = string.Format("DELETE dbo.TableMenu WHERE Id={0}", id);
+
+        }
     }
 }

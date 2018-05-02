@@ -48,3 +48,17 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\qlNhaHang\QuanLiNhaH
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\qlNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\qlNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\qlNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmOrder.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
+C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHop\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb

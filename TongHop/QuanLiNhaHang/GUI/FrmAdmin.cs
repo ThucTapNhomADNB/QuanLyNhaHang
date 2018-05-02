@@ -410,36 +410,6 @@ namespace QuanLiNhaHang.GUI
         //***********************************************************
         // an 
 
-        private void btnok_Click(object sender, EventArgs e)
-        {
-            int key = 0;
-            TableDAL tbmenuDAL = new TableDAL();
-            DataTable dtmenu = tbmenuDAL.getTableMenu();
-            Table tbmenu = new Table();
-            tbmenu.Area = cbxarea.SelectedItem.ToString();
-            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
-            DataRow[] rows = dtmenu.Select(filterExpression);
-            if (rows.Length == 0)
-            {
-                tbmenu.TableName = tbtablename.Text;
-            }
-            else
-            {
-                key++;
-                lbloitablename.Text = "*Tên bàn bị trùng";
-            }
-            tbmenu.Status = 0;
-            if (key == 0)
-            {
-                tbmenuDAL.insertTableMenu(tbmenu);
-                lbnotice1.Text = "Thêm bàn thành công";
-            }
-            else
-            {
-                lbnotice1.Text = "Thêm bàn thất bại";
-            }
-        }
-
         private void btAddAccount_Click(object sender, EventArgs e)
         {
             int key = 0;
@@ -503,67 +473,107 @@ namespace QuanLiNhaHang.GUI
                 lbnotice.Text = "Thêm tài khoản thất bại";
             }
         }
-        private void tbdisplayname_TextChanged(object sender, EventArgs e)
+        
+        private void tabBan_Click(object sender, EventArgs e)
         {
+            HienthiDanhsachBan();
+            tbid.Enabled = false;
+        }
+        public void HienthiDanhsachBan()
+        {
+            dgvtable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            TableDAL tbmenuDAL = new TableDAL();
+            dgvtable.DataSource = tbmenuDAL.getTableMenu();
+        }
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+            int key = 0;
+            TableDAL tbmenuDAL = new TableDAL();
+            DataTable dtmenu = tbmenuDAL.getTableMenu();
+            Table tbmenu = new Table();
+            tbmenu.Area = cbxarea.SelectedItem.ToString();
+            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
+            DataRow[] rows = dtmenu.Select(filterExpression);
+            if (rows.Length == 0)
+            {
+                tbmenu.TableName = tbtablename.Text;
+            }
+            else
+            {
+                key++;
+                lbloitablename.Text = "*Tên bàn bị trùng";
+            }
+            tbmenu.Status = 0;
+            if (key == 0)
+            {
+                tbmenuDAL.insertTableMenu(tbmenu);
+                lbnotice1.Text = "Thêm bàn thành công";
+                dgvtable.DataSource = tbmenuDAL.getTableMenu();
+            }
+            else
+            {
+                lbnotice1.Text = "Thêm bàn thất bại";
+            }
+        }
+
+        private void dgvtable_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tbid.Enabled = true;
+            int numRow;
+            numRow = e.RowIndex;
+            tbid.Text = dgvtable.Rows[numRow].Cells[0].Value.ToString();
+            cbxarea.Text = dgvtable.Rows[numRow].Cells[1].Value.ToString();
+            tbtablename.Text = dgvtable.Rows[numRow].Cells[2].Value.ToString();
+            tbstatus.Text = dgvtable.Rows[numRow].Cells[3].Value.ToString();
+        }
+        private void btnsua_Click(object sender, EventArgs e)
+        {
+            int key = 0;
+            TableDAL tbmenuDAL = new TableDAL();
+            DataTable dtmenu = tbmenuDAL.getTableMenu();
+            Table tbmenu = new Table();
+            tbmenu.Area = cbxarea.SelectedItem.ToString();
+            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
+            DataRow[] rows = dtmenu.Select(filterExpression);
+            if (rows.Length == 0)
+            {
+                tbmenu.TableName = tbtablename.Text;
+            }
+            else
+            {
+                key++;
+                lbloitablename.Text = "*Tên bàn bị trùng";
+            }
+            tbmenu.Status = 0;
+            if (key == 0)
+            {
+                tbmenuDAL.insertTableMenu(tbmenu);
+                lbnotice1.Text = "sửa thành công";
+                dgvtable.DataSource = tbmenuDAL.getTableMenu();
+            }
+            else
+            {
+                lbnotice1.Text = "sửa thất bại";
+            }
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnxoa_Click(object sender, EventArgs e)
         {
-
+            TableDAL tbmenuDAL = new TableDAL();
+            DataTable dtmenu = tbmenuDAL.getTableMenu();
+            Table tbmenu = new Table();
+            try
+            {
+                int id = Convert.ToInt16(tbid.Text);
+                tbmenuDAL.deleteTableMenu(id);
+                dgvtable.DataSource = tbmenuDAL.getTableMenu();
+            }
+            catch
+            {
+                MessageBox.Show("ma ban khong thoa man", " loi ");
+            }
         }
-
-        private void rbNhanVien_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbAdmin_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbRepass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbUsername_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTaikhoan8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTaikhoan7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTaikhoan6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTaikhoan5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbTaiKhoan1_Click(object sender, EventArgs e)
-        {
-
-        }
-    
-              
 
 
         // ****************************************************************************
