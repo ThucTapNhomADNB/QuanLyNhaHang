@@ -62,3 +62,6 @@ D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang
 D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
 D:\Tài liệu\TT Nhóm\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmStatis.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\Binh\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\Binh\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb

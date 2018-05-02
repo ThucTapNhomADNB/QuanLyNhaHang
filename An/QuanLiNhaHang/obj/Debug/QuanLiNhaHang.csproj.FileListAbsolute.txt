@@ -58,3 +58,16 @@ C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\An\QuanLiNhaHang\bin\Debug\QuanLiNh
 C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 C:\Users\ThanhNhan\Desktop\git\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
 >>>>>>> 6d0a4e7cd15e4388867e85156a83f45680e98af1
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\repo\QuanLyNhaHang\An\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache

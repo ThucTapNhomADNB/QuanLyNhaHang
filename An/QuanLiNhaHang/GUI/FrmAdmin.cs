@@ -16,10 +16,18 @@ namespace QuanLiNhaHang.GUI
         public FrmAdmin()
         {
             InitializeComponent();
+
+
+            lbloitablename.Text = "*Tên bàn bị trùng";
+
+            lbnotice1.Text = "Thêm bàn thành công";
+
+            lbnotice1.Text = "Thêm bàn thất bại";
+
         }
         private void btAddAccount_Click(object sender, EventArgs e)
         {
-            int key=0;
+            int key = 0;
             AccountDAL accDAL = new AccountDAL();
             DataTable dataacc = accDAL.GetAccount();
             Account acc = new Account();
@@ -33,9 +41,9 @@ namespace QuanLiNhaHang.GUI
             else
             {
                 key++;
-                lbloiusername.Text= "*Tên đăng nhập bị trùng";
+                lbloiusername.Text = "*Tên đăng nhập bị trùng";
             }
-            if (tbPass.Text.Length >=8)
+            if (tbPass.Text.Length >= 8)
             {
 
             }
@@ -45,7 +53,7 @@ namespace QuanLiNhaHang.GUI
                 lbloipassword.Text = "*Mật khẩu it nhất 8 kí tự";
             }
             //check pass
-            if(tbRepass.Text==tbPass.Text)
+            if (tbRepass.Text == tbPass.Text)
             {
                 acc.PassWord = tbPass.Text;
             }
@@ -109,6 +117,41 @@ namespace QuanLiNhaHang.GUI
             {
                 lbnotice1.Text = "Thêm bàn thất bại";
             }
+        }
+
+        private void lbarea_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxarea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbtablename_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbstatus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
