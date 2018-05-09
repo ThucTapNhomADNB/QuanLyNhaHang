@@ -79,7 +79,6 @@
             this.lbarea = new System.Windows.Forms.Label();
             this.tbstatus = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbxarea = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbloitablename = new System.Windows.Forms.Label();
             this.tbtablename = new System.Windows.Forms.TextBox();
@@ -102,6 +101,7 @@
             this.btEditEmployee = new System.Windows.Forms.Button();
             this.btInsertEmployee = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btCapTaiKhoan = new System.Windows.Forms.Button();
             this.txtPhoneNumberEmployee = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtAgeEmployee = new System.Windows.Forms.TextBox();
@@ -115,7 +115,8 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtSearchEmployee = new System.Windows.Forms.TextBox();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.btCapTaiKhoan = new System.Windows.Forms.Button();
+            this.tbArea = new System.Windows.Forms.TextBox();
+            this.lbloiArea = new System.Windows.Forms.Label();
             this.tabAdmin.SuspendLayout();
             this.tabThucDon.SuspendLayout();
             this.panelSearch.SuspendLayout();
@@ -620,6 +621,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Aqua;
+            this.panel7.Controls.Add(this.lbloiArea);
+            this.panel7.Controls.Add(this.tbArea);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.tbid);
             this.panel7.Controls.Add(this.btnxoa);
@@ -630,7 +633,6 @@
             this.panel7.Controls.Add(this.lbarea);
             this.panel7.Controls.Add(this.tbstatus);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.cbxarea);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.lbloitablename);
             this.panel7.Controls.Add(this.tbtablename);
@@ -734,18 +736,6 @@
             this.label4.Size = new System.Drawing.Size(60, 19);
             this.label4.TabIndex = 32;
             this.label4.Text = "Status :";
-            // 
-            // cbxarea
-            // 
-            this.cbxarea.FormattingEnabled = true;
-            this.cbxarea.Items.AddRange(new object[] {
-            "Tầng 1",
-            "Tầng 2",
-            "Tầng 3"});
-            this.cbxarea.Location = new System.Drawing.Point(174, 135);
-            this.cbxarea.Name = "cbxarea";
-            this.cbxarea.Size = new System.Drawing.Size(150, 21);
-            this.cbxarea.TabIndex = 28;
             // 
             // label3
             // 
@@ -994,6 +984,18 @@
             this.panel2.Size = new System.Drawing.Size(295, 341);
             this.panel2.TabIndex = 38;
             // 
+            // btCapTaiKhoan
+            // 
+            this.btCapTaiKhoan.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btCapTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapTaiKhoan.Location = new System.Drawing.Point(74, 279);
+            this.btCapTaiKhoan.Name = "btCapTaiKhoan";
+            this.btCapTaiKhoan.Size = new System.Drawing.Size(145, 35);
+            this.btCapTaiKhoan.TabIndex = 3;
+            this.btCapTaiKhoan.Text = "Cấp tài khoản";
+            this.btCapTaiKhoan.UseVisualStyleBackColor = false;
+            this.btCapTaiKhoan.Click += new System.EventHandler(this.btCapTaiKhoan_Click);
+            // 
             // txtPhoneNumberEmployee
             // 
             this.txtPhoneNumberEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1122,17 +1124,22 @@
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             // 
-            // btCapTaiKhoan
+            // tbArea
             // 
-            this.btCapTaiKhoan.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btCapTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCapTaiKhoan.Location = new System.Drawing.Point(74, 279);
-            this.btCapTaiKhoan.Name = "btCapTaiKhoan";
-            this.btCapTaiKhoan.Size = new System.Drawing.Size(145, 35);
-            this.btCapTaiKhoan.TabIndex = 3;
-            this.btCapTaiKhoan.Text = "Cấp tài khoản";
-            this.btCapTaiKhoan.UseVisualStyleBackColor = false;
-            this.btCapTaiKhoan.Click += new System.EventHandler(this.btCapTaiKhoan_Click);
+            this.tbArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbArea.Location = new System.Drawing.Point(174, 131);
+            this.tbArea.Name = "tbArea";
+            this.tbArea.Size = new System.Drawing.Size(150, 26);
+            this.tbArea.TabIndex = 39;
+            // 
+            // lbloiArea
+            // 
+            this.lbloiArea.AutoSize = true;
+            this.lbloiArea.ForeColor = System.Drawing.Color.Red;
+            this.lbloiArea.Location = new System.Drawing.Point(181, 169);
+            this.lbloiArea.Name = "lbloiArea";
+            this.lbloiArea.Size = new System.Drawing.Size(0, 13);
+            this.lbloiArea.TabIndex = 40;
             // 
             // FrmAdmin
             // 
@@ -1233,7 +1240,6 @@
         private System.Windows.Forms.TextBox tbtablename;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbxarea;
         private System.Windows.Forms.Label lbarea;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel1;
@@ -1271,5 +1277,7 @@
         private System.Windows.Forms.TextBox txtPhoneNumberEmployee;
         private System.Windows.Forms.TextBox txtSearchEmployee;
         private System.Windows.Forms.Button btCapTaiKhoan;
+        private System.Windows.Forms.TextBox tbArea;
+        private System.Windows.Forms.Label lbloiArea;
     }
 }

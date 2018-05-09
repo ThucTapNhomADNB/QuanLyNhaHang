@@ -383,7 +383,15 @@ namespace QuanLiNhaHang.GUI
             TableDAL tbmenuDAL = new TableDAL();
             DataTable dtmenu = tbmenuDAL.getTableMenu();
             Table tbmenu = new Table();
-            tbmenu.Area = cbxarea.SelectedItem.ToString();
+            if(tbArea.TextLength!=0)
+            {
+                tbmenu.Area = tbArea.Text;
+            }
+            else
+            {
+                key++;
+                lbloiArea.Text = "Chưa Nhập Khu Vực";
+            }
             string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
             DataRow[] rows = dtmenu.Select(filterExpression);
             if (rows.Length == 0)
@@ -414,9 +422,9 @@ namespace QuanLiNhaHang.GUI
             int numRow;
             numRow = e.RowIndex;
             tbid.Text = dgvtable.Rows[numRow].Cells[0].Value.ToString();
-            cbxarea.Text = dgvtable.Rows[numRow].Cells[1].Value.ToString();
-            tbtablename.Text = dgvtable.Rows[numRow].Cells[2].Value.ToString();
-            tbstatus.Text = dgvtable.Rows[numRow].Cells[3].Value.ToString();
+            tbArea.Text = dgvtable.Rows[numRow].Cells[3].Value.ToString();
+            tbtablename.Text = dgvtable.Rows[numRow].Cells[1].Value.ToString();
+            tbstatus.Text = dgvtable.Rows[numRow].Cells[2].Value.ToString();
         }
         private void btnsua_Click(object sender, EventArgs e)
         {
@@ -424,7 +432,15 @@ namespace QuanLiNhaHang.GUI
             TableDAL tbmenuDAL = new TableDAL();
             DataTable dtmenu = tbmenuDAL.getTableMenu();
             Table tbmenu = new Table();
-            tbmenu.Area = cbxarea.SelectedItem.ToString();
+            if (tbArea.TextLength != 0)
+            {
+                tbmenu.Area = tbArea.Text;
+            }
+            else
+            {
+                key++;
+                lbloiArea.Text = "Chưa Nhập Khu Vực";
+            }
             string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
             DataRow[] rows = dtmenu.Select(filterExpression);
             if (rows.Length == 0)
