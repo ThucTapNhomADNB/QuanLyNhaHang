@@ -383,7 +383,7 @@ namespace QuanLiNhaHang.GUI
             TableDAL tbmenuDAL = new TableDAL();
             DataTable dtmenu = tbmenuDAL.getTableMenu();
             Table tbmenu = new Table();
-            if(tbArea.TextLength!=0)
+            if (tbArea.TextLength != 0)
             {
                 tbmenu.Area = tbArea.Text;
             }
@@ -392,8 +392,9 @@ namespace QuanLiNhaHang.GUI
                 key++;
                 lbloiArea.Text = "Chưa Nhập Khu Vực";
             }
-            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
-            DataRow[] rows = dtmenu.Select(filterExpression);
+            DataTable tbmenu_Area = tbmenuDAL.getTableMenu(tbmenu.Area);
+            string filterExpression = string.Format("TableName='{0}'", tbtablename.Text);
+            DataRow[] rows = tbmenu_Area.Select(filterExpression);
             if (rows.Length == 0)
             {
                 tbmenu.TableName = tbtablename.Text;
@@ -441,8 +442,9 @@ namespace QuanLiNhaHang.GUI
                 key++;
                 lbloiArea.Text = "Chưa Nhập Khu Vực";
             }
-            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
-            DataRow[] rows = dtmenu.Select(filterExpression);
+            DataTable tbmenu_Area = tbmenuDAL.getTableMenu(tbmenu.Area);
+            string filterExpression = string.Format("TableName='{0}'", tbtablename.Text);
+            DataRow[] rows = tbmenu_Area.Select(filterExpression);
             if (rows.Length == 0)
             {
                 tbmenu.TableName = tbtablename.Text;
