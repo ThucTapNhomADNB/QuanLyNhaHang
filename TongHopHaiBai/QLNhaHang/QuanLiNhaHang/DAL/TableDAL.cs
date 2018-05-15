@@ -129,14 +129,14 @@ namespace QuanLiNhaHang.DAL
         // them ban
         public void insertTableMenu(Table tb)
         {
-            string query = string.Format("INSERT dbo.TableMenu(TableName, Status, Area) VALUES('{0}', {1}, '{2}')", tb.TableName, tb.Status, tb.Area);
+            string query = string.Format("INSERT dbo.TableMenu(TableName, Status, Area) VALUES(N'{0}', {1}, N'{2}')", tb.TableName, tb.Status, tb.Area);
             dbConnect.ExecuteNonQuery(query);
         }
 
         // sua ban
         public void editTableMenu(Table tb)
         {
-            string query = string.Format("UPDATE dbo.TableMenu set TableName=N'{0}',Status={1}, Area=N'{2}'", tb.TableName, tb.Status, tb.Area);
+            string query = string.Format("UPDATE dbo.TableMenu set TableName=N'{0}',Status={1}, Area=N'{2}' where Id={3}", tb.TableName, tb.Status, tb.Area, tb.Id);
             dbConnect.ExecuteNonQuery(query);
         }
 
@@ -144,7 +144,7 @@ namespace QuanLiNhaHang.DAL
         public void deleteTableMenu(int id)
         {
             string query = string.Format("DELETE dbo.TableMenu WHERE Id={0}", id);
-
+            dbConnect.ExecuteNonQuery(query);
         }
     }
 }

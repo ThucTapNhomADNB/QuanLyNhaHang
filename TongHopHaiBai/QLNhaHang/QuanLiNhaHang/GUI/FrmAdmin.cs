@@ -406,7 +406,7 @@ namespace QuanLiNhaHang.GUI
             {
                 tablemenuDAL.insertTableMenu(tablemenu);
                 lbnotice1.Text = "Thêm bàn thành công";
-                dgvtable.DataSource = tablemenuDAL.getTableMenu();
+                HienthiDanhsachBan();
             }
             else
             {
@@ -429,6 +429,16 @@ namespace QuanLiNhaHang.GUI
             int key = 0;
             TableDAL tablemenuDAL = new TableDAL();
             Table tablemenu = new Table();
+            if (tbid.TextLength != 0)
+            {
+                tablemenu.Id = Convert.ToInt32(tbid.Text);
+            }
+            else
+            {
+                key++;
+                lbloiArea.Text = "Chưa Nhập Mã Bàn";
+            }
+            
             if (tbArea.TextLength != 0)
             {
                 tablemenu.Area = tbArea.Text;
@@ -453,13 +463,13 @@ namespace QuanLiNhaHang.GUI
             tablemenu.Status = 0;
             if (key == 0)
             {
-                tablemenuDAL.insertTableMenu(tablemenu);
-                lbnotice1.Text = "Thêm bàn thành công";
-                dgvtable.DataSource = tablemenuDAL.getTableMenu();
+                tablemenuDAL.editTableMenu(tablemenu);
+                lbnotice1.Text = "Sửa bàn thành công";
+                HienthiDanhsachBan();
             }
             else
             {
-                lbnotice1.Text = "Thêm bàn thất bại";
+                lbnotice1.Text = "Sửa bàn thất bại thất bại";
             }
         }
 
@@ -470,9 +480,9 @@ namespace QuanLiNhaHang.GUI
             Table tbmenu = new Table();
             try
             {
-                int id = Convert.ToInt16(tbid.Text);
+                int id = Convert.ToInt32(tbid.Text);
                 tbmenuDAL.deleteTableMenu(id);
-                dgvtable.DataSource = tbmenuDAL.getTableMenu();
+                HienthiDanhsachBan();
             }
             catch
             {
