@@ -68,7 +68,7 @@
             this.btnthemdm = new System.Windows.Forms.Button();
             this.tabBan = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.txtAreaTable = new System.Windows.Forms.TextBox();
+            this.tbArea = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbid = new System.Windows.Forms.TextBox();
             this.btnxoa = new System.Windows.Forms.Button();
@@ -115,6 +115,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtSearchEmployee = new System.Windows.Forms.TextBox();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.lbloiArea = new System.Windows.Forms.Label();
             this.tabAdmin.SuspendLayout();
             this.tabThucDon.SuspendLayout();
             this.panelSearch.SuspendLayout();
@@ -606,7 +607,8 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Aqua;
-            this.panel7.Controls.Add(this.txtAreaTable);
+            this.panel7.Controls.Add(this.lbloiArea);
+            this.panel7.Controls.Add(this.tbArea);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.tbid);
             this.panel7.Controls.Add(this.btnxoa);
@@ -625,13 +627,13 @@
             this.panel7.Size = new System.Drawing.Size(339, 432);
             this.panel7.TabIndex = 36;
             // 
-            // txtAreaTable
+            // tbArea
             // 
-            this.txtAreaTable.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAreaTable.Location = new System.Drawing.Point(174, 134);
-            this.txtAreaTable.Name = "txtAreaTable";
-            this.txtAreaTable.Size = new System.Drawing.Size(150, 26);
-            this.txtAreaTable.TabIndex = 39;
+            this.tbArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbArea.Location = new System.Drawing.Point(174, 134);
+            this.tbArea.Name = "tbArea";
+            this.tbArea.Size = new System.Drawing.Size(150, 26);
+            this.tbArea.TabIndex = 39;
             // 
             // label5
             // 
@@ -1116,6 +1118,14 @@
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             // 
+            // lbloiArea
+            // 
+            this.lbloiArea.AutoSize = true;
+            this.lbloiArea.Location = new System.Drawing.Point(180, 172);
+            this.lbloiArea.Name = "lbloiArea";
+            this.lbloiArea.Size = new System.Drawing.Size(0, 13);
+            this.lbloiArea.TabIndex = 40;
+            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1251,6 +1261,7 @@
         private System.Windows.Forms.TextBox txtPhoneNumberEmployee;
         private System.Windows.Forms.TextBox txtSearchEmployee;
         private System.Windows.Forms.Button btCapTaiKhoan;
-        private System.Windows.Forms.TextBox txtAreaTable;
+        private System.Windows.Forms.TextBox tbArea;
+        private System.Windows.Forms.Label lbloiArea;
     }
 }

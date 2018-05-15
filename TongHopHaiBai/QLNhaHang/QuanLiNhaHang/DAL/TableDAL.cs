@@ -120,7 +120,12 @@ namespace QuanLiNhaHang.DAL
             string query = "SELECT * FROM dbo.TableMenu";
             return dbConnect.GETdata(query);
         }
-
+        //
+        public DataTable getTableMenu_Area(string Area)
+        {
+            string query = string.Format("SELECT * FROM dbo.TableMenu WHERE Area=N'{0}'", Area);
+            return dbConnect.GETdata(query);
+        }
         // them ban
         public void insertTableMenu(Table tb)
         {

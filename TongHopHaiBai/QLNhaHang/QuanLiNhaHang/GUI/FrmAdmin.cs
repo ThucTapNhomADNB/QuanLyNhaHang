@@ -378,27 +378,35 @@ namespace QuanLiNhaHang.GUI
         private void btnthem_Click(object sender, EventArgs e)
         {
             int key = 0;
-            TableDAL tbmenuDAL = new TableDAL();
-            DataTable dtmenu = tbmenuDAL.getTableMenu();
-            Table tbmenu = new Table();
-           /// tbmenu.Area = cbxarea.SelectedItem.ToString();
-            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
-            DataRow[] rows = dtmenu.Select(filterExpression);
+            TableDAL tablemenuDAL = new TableDAL();
+            Table tablemenu = new Table();
+            if (tbArea.TextLength != 0)
+            {
+                tablemenu.Area = tbArea.Text;
+            }
+            else
+            {
+                key++;
+                lbloiArea.Text = "Chưa Nhập Khu Vực";
+            }
+            DataTable tablemenu_Area = tablemenuDAL.getTableMenu_Area(tablemenu.Area);
+            string filterExpression = string.Format("TableName='{0}'", tbtablename.Text);
+            DataRow[] rows = tablemenu_Area.Select(filterExpression);
             if (rows.Length == 0)
             {
-                tbmenu.TableName = tbtablename.Text;
+                tablemenu.TableName = tbtablename.Text;
             }
             else
             {
                 key++;
                 lbloitablename.Text = "*Tên bàn bị trùng";
             }
-            tbmenu.Status = 0;
+            tablemenu.Status = 0;
             if (key == 0)
             {
-                tbmenuDAL.insertTableMenu(tbmenu);
+                tablemenuDAL.insertTableMenu(tablemenu);
                 lbnotice1.Text = "Thêm bàn thành công";
-                dgvtable.DataSource = tbmenuDAL.getTableMenu();
+                dgvtable.DataSource = tablemenuDAL.getTableMenu();
             }
             else
             {
@@ -412,40 +420,47 @@ namespace QuanLiNhaHang.GUI
             int numRow;
             numRow = e.RowIndex;
             tbid.Text = dgvtable.Rows[numRow].Cells[0].Value.ToString();
-            txtAreaTable.Text = dgvtable.Rows[numRow].Cells[3].Value.ToString();
+            tbArea.Text = dgvtable.Rows[numRow].Cells[3].Value.ToString();
             tbtablename.Text = dgvtable.Rows[numRow].Cells[1].Value.ToString();
             tbstatus.Text = dgvtable.Rows[numRow].Cells[2].Value.ToString();
         }
         private void btnsua_Click(object sender, EventArgs e)
         {
             int key = 0;
-            TableDAL tbmenuDAL = new TableDAL();
-            DataTable dtmenu = tbmenuDAL.getTableMenu();
-            Table tbmenu = new Table();
-            tbmenu.Area = txtAreaTable.Text;
-            string filterExpression = string.Format("Area='{0}'", tbmenu.Area);
-            DataRow[] rows = dtmenu.Select(filterExpression);
+            TableDAL tablemenuDAL = new TableDAL();
+            Table tablemenu = new Table();
+            if (tbArea.TextLength != 0)
+            {
+                tablemenu.Area = tbArea.Text;
+            }
+            else
+            {
+                key++;
+                lbloiArea.Text = "Chưa Nhập Khu Vực";
+            }
+            DataTable tablemenu_Area = tablemenuDAL.getTableMenu_Area(tablemenu.Area);
+            string filterExpression = string.Format("TableName='{0}'", tbtablename.Text);
+            DataRow[] rows = tablemenu_Area.Select(filterExpression);
             if (rows.Length == 0)
             {
-                tbmenu.TableName = tbtablename.Text;
+                tablemenu.TableName = tbtablename.Text;
             }
             else
             {
                 key++;
                 lbloitablename.Text = "*Tên bàn bị trùng";
             }
-            tbmenu.Status = 0;
+            tablemenu.Status = 0;
             if (key == 0)
             {
-                tbmenuDAL.editTableMenu(tbmenu);
-                lbnotice1.Text = "sửa thành công";
-                dgvtable.DataSource = tbmenuDAL.getTableMenu();
+                tablemenuDAL.insertTableMenu(tablemenu);
+                lbnotice1.Text = "Thêm bàn thành công";
+                dgvtable.DataSource = tablemenuDAL.getTableMenu();
             }
             else
             {
-                lbnotice1.Text = "sửa thất bại";
+                lbnotice1.Text = "Thêm bàn thất bại";
             }
-
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
