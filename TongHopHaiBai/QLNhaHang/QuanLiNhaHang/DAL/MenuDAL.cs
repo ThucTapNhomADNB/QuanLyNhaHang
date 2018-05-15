@@ -34,7 +34,7 @@ namespace QuanLiNhaHang.DAL
 
         public void insertMenu(Menu mn)
         {
-            string query = string.Format("INSERT Menu ( Name, Price, Status) VALUES (N'{0}', N'{1}', N'{2}')", mn.Name, mn.Price, mn.Status);
+            string query = string.Format("INSERT Menu  VALUES (N'{0}', N'{1}', N'{2}',{3})", mn.Name, mn.Price, mn.Status, mn.IdCategory);
 
             dbConnect.ExecuteNonQuery(query);
         }

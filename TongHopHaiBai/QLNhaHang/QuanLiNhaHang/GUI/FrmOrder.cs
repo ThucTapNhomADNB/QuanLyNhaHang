@@ -30,6 +30,8 @@ namespace QuanLiNhaHang.GUI
             this.acc.UserName = usename;
             this.acc.PassWord = password;
             this.acc.Type = PhanQuyen;
+            //
+           // tbSoLuong.Text = this.acc.Type.ToString();
 
             lbTableName.Text = this.table.TableName;
             loadTable();
@@ -195,8 +197,9 @@ namespace QuanLiNhaHang.GUI
         // quay trở lại mainframe
         private void btReturn_Click(object sender, EventArgs e)
         {
+            int phanQuyen = this.acc.Type;
             this.Hide();
-            MainFrame frmMain = new MainFrame(this.type, this.acc.UserName, this.acc.PassWord);
+            MainFrame frmMain = new MainFrame(phanQuyen, this.acc.UserName, this.acc.PassWord);
             frmMain.ShowDialog();
         }
 
@@ -204,8 +207,16 @@ namespace QuanLiNhaHang.GUI
 
         private void trangADMINToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmAdmin frmAdmin = new FrmAdmin();
-            frmAdmin.ShowDialog();
+
+            if (this.acc.Type == 1)
+            {
+                FrmAdmin frmAdmin = new FrmAdmin();
+                frmAdmin.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền truy cập", "Lỗi");
+            }
         }
 
         private void btEdit_Click(object sender, EventArgs e)

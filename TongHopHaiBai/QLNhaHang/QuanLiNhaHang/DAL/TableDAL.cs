@@ -120,11 +120,7 @@ namespace QuanLiNhaHang.DAL
             string query = "SELECT * FROM dbo.TableMenu";
             return dbConnect.GETdata(query);
         }
-        public DataTable getTableMenu(string Area)
-        {
-            string query = string.Format("SELECT * FROM dbo.TableMenu WHERE Area='{0}'", Area);
-            return dbConnect.GETdata(query);
-        }
+
         // them ban
         public void insertTableMenu(Table tb)
         {
@@ -143,7 +139,7 @@ namespace QuanLiNhaHang.DAL
         public void deleteTableMenu(int id)
         {
             string query = string.Format("DELETE dbo.TableMenu WHERE Id={0}", id);
-            dbConnect.ExecuteNonQuery(query);
+
         }
     }
 }

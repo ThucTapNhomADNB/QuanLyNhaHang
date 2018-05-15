@@ -36,7 +36,6 @@
             this.lblNameCate = new System.Windows.Forms.Label();
             this.txtSearchMenu = new System.Windows.Forms.TextBox();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.btnxemmenu = new System.Windows.Forms.Button();
             this.btDeleteThucDon = new System.Windows.Forms.Button();
             this.btEditThucDon = new System.Windows.Forms.Button();
             this.btInsertThucDon = new System.Windows.Forms.Button();
@@ -69,6 +68,7 @@
             this.btnthemdm = new System.Windows.Forms.Button();
             this.tabBan = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.txtAreaTable = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbid = new System.Windows.Forms.TextBox();
             this.btnxoa = new System.Windows.Forms.Button();
@@ -115,8 +115,6 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtSearchEmployee = new System.Windows.Forms.TextBox();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
-            this.tbArea = new System.Windows.Forms.TextBox();
-            this.lbloiArea = new System.Windows.Forms.Label();
             this.tabAdmin.SuspendLayout();
             this.tabThucDon.SuspendLayout();
             this.panelSearch.SuspendLayout();
@@ -236,7 +234,6 @@
             this.panelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelButton.Controls.Add(this.btnxemmenu);
             this.panelButton.Controls.Add(this.btDeleteThucDon);
             this.panelButton.Controls.Add(this.btEditThucDon);
             this.panelButton.Controls.Add(this.btInsertThucDon);
@@ -245,23 +242,11 @@
             this.panelButton.Size = new System.Drawing.Size(289, 60);
             this.panelButton.TabIndex = 2;
             // 
-            // btnxemmenu
-            // 
-            this.btnxemmenu.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnxemmenu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxemmenu.Location = new System.Drawing.Point(218, 7);
-            this.btnxemmenu.Name = "btnxemmenu";
-            this.btnxemmenu.Size = new System.Drawing.Size(50, 50);
-            this.btnxemmenu.TabIndex = 3;
-            this.btnxemmenu.Text = "Xem";
-            this.btnxemmenu.UseVisualStyleBackColor = false;
-            this.btnxemmenu.Click += new System.EventHandler(this.btnxemmenu_Click);
-            // 
             // btDeleteThucDon
             // 
             this.btDeleteThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btDeleteThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeleteThucDon.Location = new System.Drawing.Point(147, 6);
+            this.btDeleteThucDon.Location = new System.Drawing.Point(220, 7);
             this.btDeleteThucDon.Name = "btDeleteThucDon";
             this.btDeleteThucDon.Size = new System.Drawing.Size(50, 50);
             this.btDeleteThucDon.TabIndex = 2;
@@ -273,7 +258,7 @@
             // 
             this.btEditThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btEditThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEditThucDon.Location = new System.Drawing.Point(80, 6);
+            this.btEditThucDon.Location = new System.Drawing.Point(120, 5);
             this.btEditThucDon.Name = "btEditThucDon";
             this.btEditThucDon.Size = new System.Drawing.Size(50, 50);
             this.btEditThucDon.TabIndex = 1;
@@ -621,8 +606,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Aqua;
-            this.panel7.Controls.Add(this.lbloiArea);
-            this.panel7.Controls.Add(this.tbArea);
+            this.panel7.Controls.Add(this.txtAreaTable);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.tbid);
             this.panel7.Controls.Add(this.btnxoa);
@@ -640,6 +624,14 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(339, 432);
             this.panel7.TabIndex = 36;
+            // 
+            // txtAreaTable
+            // 
+            this.txtAreaTable.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAreaTable.Location = new System.Drawing.Point(174, 134);
+            this.txtAreaTable.Name = "txtAreaTable";
+            this.txtAreaTable.Size = new System.Drawing.Size(150, 26);
+            this.txtAreaTable.TabIndex = 39;
             // 
             // label5
             // 
@@ -1124,23 +1116,6 @@
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             // 
-            // tbArea
-            // 
-            this.tbArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbArea.Location = new System.Drawing.Point(174, 131);
-            this.tbArea.Name = "tbArea";
-            this.tbArea.Size = new System.Drawing.Size(150, 26);
-            this.tbArea.TabIndex = 39;
-            // 
-            // lbloiArea
-            // 
-            this.lbloiArea.AutoSize = true;
-            this.lbloiArea.ForeColor = System.Drawing.Color.Red;
-            this.lbloiArea.Location = new System.Drawing.Point(181, 169);
-            this.lbloiArea.Name = "lbloiArea";
-            this.lbloiArea.Size = new System.Drawing.Size(0, 13);
-            this.lbloiArea.TabIndex = 40;
-            // 
             // FrmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1226,7 +1201,6 @@
         private System.Windows.Forms.Label lbltendm;
         private System.Windows.Forms.Label lblmadm;
         private System.Windows.Forms.TextBox txttimkiemdm;
-        private System.Windows.Forms.Button btnxemmenu;
         private System.Windows.Forms.RadioButton rbHet;
         private System.Windows.Forms.RadioButton rbCon;
         private System.Windows.Forms.TextBox txttendm;
@@ -1277,7 +1251,6 @@
         private System.Windows.Forms.TextBox txtPhoneNumberEmployee;
         private System.Windows.Forms.TextBox txtSearchEmployee;
         private System.Windows.Forms.Button btCapTaiKhoan;
-        private System.Windows.Forms.TextBox tbArea;
-        private System.Windows.Forms.Label lbloiArea;
+        private System.Windows.Forms.TextBox txtAreaTable;
     }
 }

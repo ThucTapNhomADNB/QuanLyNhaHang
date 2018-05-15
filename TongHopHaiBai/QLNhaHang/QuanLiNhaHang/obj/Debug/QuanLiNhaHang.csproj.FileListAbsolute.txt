@@ -78,19 +78,19 @@ D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLNHAHANG_ver2\QuanL
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLNHAHANG_ver2\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLNHAHANG_ver2\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmDoiMatKhau.resources
 D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\BAILAM\QLNHAHANG_ver2\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmCapTaiKhoan.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmCapTaiKhoan.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmDoiMatKhau.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmOrder.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
-C:\Users\annv\Documents\GitHub\QuanLyNhaHang\TongHopHaiBai\QLNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojResolveAssemblyReference.cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Form1.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmCapTaiKhoan.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmDoiMatKhau.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmOrder.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrUpdateAccount.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmAdmin.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.FrmLogin.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.GUI.MainFrame.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.Properties.Resources.resources
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.GenerateResource.Cache
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
+D:\HOC TAP\hoc ki VI (ki 2 nam 3)\thực tập nhóm\test\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb

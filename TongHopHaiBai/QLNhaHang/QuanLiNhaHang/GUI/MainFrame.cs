@@ -21,10 +21,13 @@ namespace QuanLiNhaHang.GUI
             InitializeComponent();
             LoadTable(2);
 
+            
+
             this.acc.UserName = username;
             this.acc.PassWord = password;
             this.acc.Type = PhanQuyen;
 
+           
         }
 
         public void LoadTable(int tt)
@@ -66,8 +69,8 @@ namespace QuanLiNhaHang.GUI
 
 
                 billDAL.insertBill(tb.Id, d);
-                TableDAL tableDAL = new TableDAL();
-                tb = tableDAL.getTableById(tb.Id);
+                //TableDAL tableDAL = new TableDAL();
+                //tb = tableDAL.getTableById(tb.Id);
             }
 
             this.Hide();
