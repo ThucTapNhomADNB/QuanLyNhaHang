@@ -61,11 +61,7 @@ namespace QuanLyHS_THPT.GUI
             FrmPCGiangDay.ShowDialog();
         }
 
-        private void kếtQuảHọcTậpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmKQHT FrmKQHT = new frmKQHT();
-            FrmKQHT.ShowDialog();
-        }
+        
 
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
