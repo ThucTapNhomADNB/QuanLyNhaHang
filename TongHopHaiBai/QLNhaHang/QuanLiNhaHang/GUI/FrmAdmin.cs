@@ -401,12 +401,19 @@ namespace QuanLiNhaHang.GUI
                 key++;
                 lbloitablename.Text = "*Tên bàn bị trùng";
             }
-            tablemenu.Status = 0;
+            if (tbstatus.TextLength != 0)
+            {
+                tablemenu.Status = Convert.ToInt16(tbstatus.Text);
+            }
+            else
+            {
+                tablemenu.Status = 0;
+            }
             if (key == 0)
             {
                 tablemenuDAL.insertTableMenu(tablemenu);
                 lbnotice1.Text = "Thêm bàn thành công";
-                HienthiDanhsachBan();
+                dgvtable.DataSource = tablemenuDAL.getTableMenu();
             }
             else
             {
@@ -416,7 +423,7 @@ namespace QuanLiNhaHang.GUI
 
         private void dgvtable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            tbid.Enabled = true;
+            tbid.Enabled = false;
             int numRow;
             numRow = e.RowIndex;
             tbid.Text = dgvtable.Rows[numRow].Cells[0].Value.ToString();
@@ -429,16 +436,7 @@ namespace QuanLiNhaHang.GUI
             int key = 0;
             TableDAL tablemenuDAL = new TableDAL();
             Table tablemenu = new Table();
-            if (tbid.TextLength != 0)
-            {
-                tablemenu.Id = Convert.ToInt32(tbid.Text);
-            }
-            else
-            {
-                key++;
-                lbloiArea.Text = "Chưa Nhập Mã Bàn";
-            }
-            
+            tablemenu.Id = Convert.ToInt16(tbid.Text);
             if (tbArea.TextLength != 0)
             {
                 tablemenu.Area = tbArea.Text;
@@ -451,7 +449,7 @@ namespace QuanLiNhaHang.GUI
             DataTable tablemenu_Area = tablemenuDAL.getTableMenu_Area(tablemenu.Area);
             string filterExpression = string.Format("TableName='{0}'", tbtablename.Text);
             DataRow[] rows = tablemenu_Area.Select(filterExpression);
-            if (rows.Length == 0)
+            if (rows.Length == 0 || tbtablename.Text == Convert.ToString(dgvtable.CurrentRow.Cells[1].Value))
             {
                 tablemenu.TableName = tbtablename.Text;
             }
@@ -460,16 +458,23 @@ namespace QuanLiNhaHang.GUI
                 key++;
                 lbloitablename.Text = "*Tên bàn bị trùng";
             }
-            tablemenu.Status = 0;
-            if (key == 0)
+            if (tbstatus.TextLength != 0)
             {
-                tablemenuDAL.editTableMenu(tablemenu);
-                lbnotice1.Text = "Sửa bàn thành công";
-                HienthiDanhsachBan();
+                tablemenu.Status = Convert.ToInt16(tbstatus.Text);
             }
             else
             {
-                lbnotice1.Text = "Sửa bàn thất bại thất bại";
+                tablemenu.Status = 0;
+            }
+            if (key == 0)
+            {
+                tablemenuDAL.editTableMenu(tablemenu);
+                lbnotice1.Text = "Sửa thành công";
+                dgvtable.DataSource = tablemenuDAL.getTableMenu();
+            }
+            else
+            {
+                lbnotice1.Text = "Sửa thất bại";
             }
         }
 
