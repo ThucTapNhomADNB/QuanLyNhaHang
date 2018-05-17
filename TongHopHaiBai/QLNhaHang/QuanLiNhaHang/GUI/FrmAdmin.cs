@@ -705,6 +705,7 @@ namespace QuanLiNhaHang.GUI
             MenuCategoryDAL mncDAL = new MenuCategoryDAL();
             dgvmenucate.DataSource = mncDAL.searchMenuCate(searchtxt);
         }
+<<<<<<< HEAD
 
         private void btnxuatfiledm_Click(object sender, EventArgs e)
         {
@@ -730,5 +731,7 @@ namespace QuanLiNhaHang.GUI
         {
             file.ExportToExcel(dgvEmployee);
         }
+=======
+>>>>>>> 601df28fdf13ffc8f303c0828f28a45f4ff77c1a
     }
 }
