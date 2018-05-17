@@ -1,5 +1,6 @@
 ﻿using QuanLyHS_THPT.DAL;
 using QuanLyHS_THPT.ENTITY;
+using QuanLyHS_THPT.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -267,6 +268,10 @@ namespace QuanLyHS_THPT.GUI
             }
 
         }
-        
+
+        private void btnXuatfileHS_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvHocSinh);
+        }
     }
 }

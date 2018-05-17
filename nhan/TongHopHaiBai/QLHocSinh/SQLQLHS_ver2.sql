@@ -1,7 +1,8 @@
 ﻿-- thực tập nhóm
 -- đề tài quản lý học sinh 
-
+CREATE DATABASE QLHOCSINH
 GO
+
 USE QLHOCSINH
 GO
 

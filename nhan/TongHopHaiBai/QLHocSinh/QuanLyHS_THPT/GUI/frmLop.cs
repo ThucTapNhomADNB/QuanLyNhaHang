@@ -1,5 +1,6 @@
 ﻿using QuanLyHS_THPT.DAL;
 using QuanLyHS_THPT.ENTITY;
+using QuanLyHS_THPT.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,11 +22,6 @@ namespace QuanLyHS_THPT.GUI
             LoadGVCN();
             LoadMon();
             LoadGVBM();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void HienThiDSLop()
@@ -236,6 +232,11 @@ namespace QuanLyHS_THPT.GUI
             {
 
             }
+        }
+
+        private void btnXuatfileLH_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvLop);
         }
     }
 }

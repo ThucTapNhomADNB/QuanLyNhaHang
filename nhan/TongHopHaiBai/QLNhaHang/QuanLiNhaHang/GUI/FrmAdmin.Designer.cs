@@ -32,13 +32,9 @@
             this.tabThucDon = new System.Windows.Forms.TabPage();
             this.panelSearch = new System.Windows.Forms.Panel();
             this.cbMenuCate = new System.Windows.Forms.ComboBox();
-            this.btSearchThucDon = new System.Windows.Forms.Button();
             this.lblNameCate = new System.Windows.Forms.Label();
             this.txtSearchMenu = new System.Windows.Forms.TextBox();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.btDeleteThucDon = new System.Windows.Forms.Button();
-            this.btEditThucDon = new System.Windows.Forms.Button();
-            this.btInsertThucDon = new System.Windows.Forms.Button();
             this.pannelViewThucDon = new System.Windows.Forms.Panel();
             this.dgvmenu = new System.Windows.Forms.DataGridView();
             this.panelEdit = new System.Windows.Forms.Panel();
@@ -61,22 +57,15 @@
             this.lblmadm = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txttimkiemdm = new System.Windows.Forms.TextBox();
-            this.btntimkiemdm = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnXoadm = new System.Windows.Forms.Button();
-            this.btnSuadm = new System.Windows.Forms.Button();
-            this.btnthemdm = new System.Windows.Forms.Button();
             this.tabBan = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lbloiArea = new System.Windows.Forms.Label();
             this.tbArea = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbid = new System.Windows.Forms.TextBox();
-            this.btnxoa = new System.Windows.Forms.Button();
-            this.btnsua = new System.Windows.Forms.Button();
             this.lbnotice1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnthem = new System.Windows.Forms.Button();
             this.lbarea = new System.Windows.Forms.Label();
             this.tbstatus = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -87,7 +76,6 @@
             this.dgvtable = new System.Windows.Forms.DataGridView();
             this.tabDoanhThu = new System.Windows.Forms.TabPage();
             this.pnThongKeChucNang = new System.Windows.Forms.Panel();
-            this.btThongKe = new System.Windows.Forms.Button();
             this.dtTo = new System.Windows.Forms.DateTimePicker();
             this.dtFrom = new System.Windows.Forms.DateTimePicker();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -98,11 +86,7 @@
             this.dvwTotal = new System.Windows.Forms.DataGridView();
             this.tabAccount = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btDeleteEmployee = new System.Windows.Forms.Button();
-            this.btEditEmployee = new System.Windows.Forms.Button();
-            this.btInsertEmployee = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btCapTaiKhoan = new System.Windows.Forms.Button();
             this.txtPhoneNumberEmployee = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtAgeEmployee = new System.Windows.Forms.TextBox();
@@ -116,6 +100,27 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtSearchEmployee = new System.Windows.Forms.TextBox();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.btSearchThucDon = new System.Windows.Forms.Button();
+            this.btnXuatfileMenu = new System.Windows.Forms.Button();
+            this.btDeleteThucDon = new System.Windows.Forms.Button();
+            this.btEditThucDon = new System.Windows.Forms.Button();
+            this.btInsertThucDon = new System.Windows.Forms.Button();
+            this.btntimkiemdm = new System.Windows.Forms.Button();
+            this.btnxuatfiledm = new System.Windows.Forms.Button();
+            this.btnXoadm = new System.Windows.Forms.Button();
+            this.btnSuadm = new System.Windows.Forms.Button();
+            this.btnthemdm = new System.Windows.Forms.Button();
+            this.btnXuatfileban = new System.Windows.Forms.Button();
+            this.btnxoa = new System.Windows.Forms.Button();
+            this.btnsua = new System.Windows.Forms.Button();
+            this.btnthem = new System.Windows.Forms.Button();
+            this.btnxuatfilethongke = new System.Windows.Forms.Button();
+            this.btThongKe = new System.Windows.Forms.Button();
+            this.btnxuatfileNV = new System.Windows.Forms.Button();
+            this.btDeleteEmployee = new System.Windows.Forms.Button();
+            this.btEditEmployee = new System.Windows.Forms.Button();
+            this.btInsertEmployee = new System.Windows.Forms.Button();
+            this.btCapTaiKhoan = new System.Windows.Forms.Button();
             this.tabAdmin.SuspendLayout();
             this.tabThucDon.SuspendLayout();
             this.panelSearch.SuspendLayout();
@@ -153,7 +158,7 @@
             this.tabAdmin.Controls.Add(this.tabAccount);
             this.tabAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabAdmin.Location = new System.Drawing.Point(0, 0);
-            this.tabAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.tabAdmin.Name = "tabAdmin";
             this.tabAdmin.SelectedIndex = 0;
             this.tabAdmin.Size = new System.Drawing.Size(1188, 567);
@@ -166,9 +171,9 @@
             this.tabThucDon.Controls.Add(this.pannelViewThucDon);
             this.tabThucDon.Controls.Add(this.panelEdit);
             this.tabThucDon.Location = new System.Drawing.Point(4, 25);
-            this.tabThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabThucDon.Margin = new System.Windows.Forms.Padding(4);
             this.tabThucDon.Name = "tabThucDon";
-            this.tabThucDon.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabThucDon.Padding = new System.Windows.Forms.Padding(4);
             this.tabThucDon.Size = new System.Drawing.Size(1180, 538);
             this.tabThucDon.TabIndex = 0;
             this.tabThucDon.Text = "Thực đơn";
@@ -176,14 +181,12 @@
             // 
             // panelSearch
             // 
-            this.panelSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelSearch.Controls.Add(this.cbMenuCate);
             this.panelSearch.Controls.Add(this.btSearchThucDon);
             this.panelSearch.Controls.Add(this.lblNameCate);
             this.panelSearch.Controls.Add(this.txtSearchMenu);
             this.panelSearch.Location = new System.Drawing.Point(403, 9);
-            this.panelSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSearch.Margin = new System.Windows.Forms.Padding(4);
             this.panelSearch.Name = "panelSearch";
             this.panelSearch.Size = new System.Drawing.Size(757, 70);
             this.panelSearch.TabIndex = 3;
@@ -199,21 +202,11 @@
             this.cbMenuCate.TabIndex = 11;
             this.cbMenuCate.SelectedIndexChanged += new System.EventHandler(this.cbMenuCate_SelectedIndexChanged);
             // 
-            // btSearchThucDon
-            // 
-            this.btSearchThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btSearchThucDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSearchThucDon.Location = new System.Drawing.Point(11, 15);
-            this.btSearchThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btSearchThucDon.Name = "btSearchThucDon";
-            this.btSearchThucDon.Size = new System.Drawing.Size(113, 42);
-            this.btSearchThucDon.TabIndex = 1;
-            this.btSearchThucDon.Text = "Tìm kiếm";
-            this.btSearchThucDon.UseVisualStyleBackColor = false;
-            this.btSearchThucDon.Click += new System.EventHandler(this.btSearchThucDon_Click);
-            // 
             // lblNameCate
             // 
+            this.lblNameCate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNameCate.AutoSize = true;
             this.lblNameCate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameCate.Location = new System.Drawing.Point(399, 32);
@@ -229,65 +222,26 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearchMenu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchMenu.Location = new System.Drawing.Point(132, 23);
-            this.txtSearchMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchMenu.Location = new System.Drawing.Point(154, 24);
+            this.txtSearchMenu.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchMenu.Name = "txtSearchMenu";
-            this.txtSearchMenu.Size = new System.Drawing.Size(257, 30);
+            this.txtSearchMenu.Size = new System.Drawing.Size(240, 30);
             this.txtSearchMenu.TabIndex = 0;
             this.txtSearchMenu.TextChanged += new System.EventHandler(this.txtSearchMenu_TextChanged);
             // 
             // panelButton
             // 
-            this.panelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelButton.Controls.Add(this.btnXuatfileMenu);
             this.panelButton.Controls.Add(this.btDeleteThucDon);
             this.panelButton.Controls.Add(this.btEditThucDon);
             this.panelButton.Controls.Add(this.btInsertThucDon);
             this.panelButton.Location = new System.Drawing.Point(9, 6);
-            this.panelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelButton.Margin = new System.Windows.Forms.Padding(4);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(385, 74);
+            this.panelButton.Size = new System.Drawing.Size(385, 82);
             this.panelButton.TabIndex = 2;
-            // 
-            // btDeleteThucDon
-            // 
-            this.btDeleteThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btDeleteThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeleteThucDon.Location = new System.Drawing.Point(293, 9);
-            this.btDeleteThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btDeleteThucDon.Name = "btDeleteThucDon";
-            this.btDeleteThucDon.Size = new System.Drawing.Size(67, 62);
-            this.btDeleteThucDon.TabIndex = 2;
-            this.btDeleteThucDon.Text = "Xóa";
-            this.btDeleteThucDon.UseVisualStyleBackColor = false;
-            this.btDeleteThucDon.Click += new System.EventHandler(this.btDeleteThucDon_Click);
-            // 
-            // btEditThucDon
-            // 
-            this.btEditThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btEditThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEditThucDon.Location = new System.Drawing.Point(160, 6);
-            this.btEditThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btEditThucDon.Name = "btEditThucDon";
-            this.btEditThucDon.Size = new System.Drawing.Size(67, 62);
-            this.btEditThucDon.TabIndex = 1;
-            this.btEditThucDon.Text = "Sửa";
-            this.btEditThucDon.UseVisualStyleBackColor = false;
-            this.btEditThucDon.Click += new System.EventHandler(this.btEditThucDon_Click);
-            // 
-            // btInsertThucDon
-            // 
-            this.btInsertThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btInsertThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertThucDon.Location = new System.Drawing.Point(17, 6);
-            this.btInsertThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btInsertThucDon.Name = "btInsertThucDon";
-            this.btInsertThucDon.Size = new System.Drawing.Size(67, 62);
-            this.btInsertThucDon.TabIndex = 0;
-            this.btInsertThucDon.Text = "Thêm";
-            this.btInsertThucDon.UseVisualStyleBackColor = false;
-            this.btInsertThucDon.Click += new System.EventHandler(this.btInsertThucDon_Click);
             // 
             // pannelViewThucDon
             // 
@@ -298,7 +252,7 @@
             this.pannelViewThucDon.BackColor = System.Drawing.Color.DimGray;
             this.pannelViewThucDon.Controls.Add(this.dgvmenu);
             this.pannelViewThucDon.Location = new System.Drawing.Point(404, 92);
-            this.pannelViewThucDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pannelViewThucDon.Margin = new System.Windows.Forms.Padding(4);
             this.pannelViewThucDon.Name = "pannelViewThucDon";
             this.pannelViewThucDon.Size = new System.Drawing.Size(773, 439);
             this.pannelViewThucDon.TabIndex = 1;
@@ -310,7 +264,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvmenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvmenu.Location = new System.Drawing.Point(4, 4);
-            this.dgvmenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvmenu.Margin = new System.Windows.Forms.Padding(4);
             this.dgvmenu.Name = "dgvmenu";
             this.dgvmenu.Size = new System.Drawing.Size(765, 425);
             this.dgvmenu.TabIndex = 0;
@@ -318,9 +272,6 @@
             // 
             // panelEdit
             // 
-            this.panelEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelEdit.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panelEdit.Controls.Add(this.rbHet);
             this.panelEdit.Controls.Add(this.rbCon);
@@ -331,10 +282,10 @@
             this.panelEdit.Controls.Add(this.lbGiaMonAn);
             this.panelEdit.Controls.Add(this.lbTinhTrangMonAn);
             this.panelEdit.Controls.Add(this.lbNameMonAn);
-            this.panelEdit.Location = new System.Drawing.Point(11, 92);
-            this.panelEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelEdit.Location = new System.Drawing.Point(11, 96);
+            this.panelEdit.Margin = new System.Windows.Forms.Padding(4);
             this.panelEdit.Name = "panelEdit";
-            this.panelEdit.Size = new System.Drawing.Size(389, 443);
+            this.panelEdit.Size = new System.Drawing.Size(368, 439);
             this.panelEdit.TabIndex = 0;
             // 
             // rbHet
@@ -366,8 +317,8 @@
             // txtMaMon
             // 
             this.txtMaMon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaMon.Location = new System.Drawing.Point(76, 87);
-            this.txtMaMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaMon.Location = new System.Drawing.Point(76, 76);
+            this.txtMaMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaMon.Name = "txtMaMon";
             this.txtMaMon.Size = new System.Drawing.Size(253, 30);
             this.txtMaMon.TabIndex = 7;
@@ -376,7 +327,7 @@
             // 
             this.lblMaMon.AutoSize = true;
             this.lblMaMon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaMon.Location = new System.Drawing.Point(85, 46);
+            this.lblMaMon.Location = new System.Drawing.Point(72, 30);
             this.lblMaMon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaMon.Name = "lblMaMon";
             this.lblMaMon.Size = new System.Drawing.Size(78, 23);
@@ -387,7 +338,7 @@
             // 
             this.txtGia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.Location = new System.Drawing.Point(76, 287);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(253, 30);
             this.txtGia.TabIndex = 4;
@@ -396,7 +347,7 @@
             // 
             this.txtTenMon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon.Location = new System.Drawing.Point(76, 183);
-            this.txtTenMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenMon.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(253, 30);
             this.txtTenMon.TabIndex = 3;
@@ -405,7 +356,7 @@
             // 
             this.lbGiaMonAn.AutoSize = true;
             this.lbGiaMonAn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGiaMonAn.Location = new System.Drawing.Point(83, 245);
+            this.lbGiaMonAn.Location = new System.Drawing.Point(72, 240);
             this.lbGiaMonAn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGiaMonAn.Name = "lbGiaMonAn";
             this.lbGiaMonAn.Size = new System.Drawing.Size(102, 23);
@@ -416,7 +367,7 @@
             // 
             this.lbTinhTrangMonAn.AutoSize = true;
             this.lbTinhTrangMonAn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTinhTrangMonAn.Location = new System.Drawing.Point(83, 346);
+            this.lbTinhTrangMonAn.Location = new System.Drawing.Point(72, 346);
             this.lbTinhTrangMonAn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTinhTrangMonAn.Name = "lbTinhTrangMonAn";
             this.lbTinhTrangMonAn.Size = new System.Drawing.Size(99, 23);
@@ -427,7 +378,7 @@
             // 
             this.lbNameMonAn.AutoSize = true;
             this.lbNameMonAn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameMonAn.Location = new System.Drawing.Point(83, 142);
+            this.lbNameMonAn.Location = new System.Drawing.Point(72, 132);
             this.lbNameMonAn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNameMonAn.Name = "lbNameMonAn";
             this.lbNameMonAn.Size = new System.Drawing.Size(82, 23);
@@ -508,27 +459,25 @@
             // lbltendm
             // 
             this.lbltendm.AutoSize = true;
-            this.lbltendm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltendm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltendm.Location = new System.Drawing.Point(32, 153);
             this.lbltendm.Name = "lbltendm";
-            this.lbltendm.Size = new System.Drawing.Size(127, 20);
+            this.lbltendm.Size = new System.Drawing.Size(126, 23);
             this.lbltendm.TabIndex = 3;
             this.lbltendm.Text = "Tên danh mục";
             // 
             // lblmadm
             // 
             this.lblmadm.AutoSize = true;
-            this.lblmadm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmadm.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmadm.Location = new System.Drawing.Point(32, 43);
             this.lblmadm.Name = "lblmadm";
-            this.lblmadm.Size = new System.Drawing.Size(121, 20);
+            this.lblmadm.Size = new System.Drawing.Size(122, 23);
             this.lblmadm.TabIndex = 2;
             this.lblmadm.Text = "Mã danh mục";
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.txttimkiemdm);
             this.panel4.Controls.Add(this.btntimkiemdm);
             this.panel4.Location = new System.Drawing.Point(431, 2);
@@ -539,6 +488,8 @@
             // 
             // txttimkiemdm
             // 
+            this.txttimkiemdm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txttimkiemdm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttimkiemdm.Location = new System.Drawing.Point(125, 33);
             this.txttimkiemdm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -547,68 +498,19 @@
             this.txttimkiemdm.TabIndex = 2;
             this.txttimkiemdm.TextChanged += new System.EventHandler(this.txttimkiemdm_TextChanged);
             // 
-            // btntimkiemdm
-            // 
-            this.btntimkiemdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btntimkiemdm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimkiemdm.Location = new System.Drawing.Point(524, 33);
-            this.btntimkiemdm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btntimkiemdm.Name = "btntimkiemdm";
-            this.btntimkiemdm.Size = new System.Drawing.Size(101, 44);
-            this.btntimkiemdm.TabIndex = 1;
-            this.btntimkiemdm.Text = "Tìm kiếm";
-            this.btntimkiemdm.UseVisualStyleBackColor = false;
-            this.btntimkiemdm.Click += new System.EventHandler(this.btntimkiemdm_Click);
-            // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel3.Controls.Add(this.btnxuatfiledm);
             this.panel3.Controls.Add(this.btnXoadm);
             this.panel3.Controls.Add(this.btnSuadm);
             this.panel3.Controls.Add(this.btnthemdm);
             this.panel3.Location = new System.Drawing.Point(3, 2);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(403, 100);
+            this.panel3.Size = new System.Drawing.Size(403, 118);
             this.panel3.TabIndex = 0;
-            // 
-            // btnXoadm
-            // 
-            this.btnXoadm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnXoadm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoadm.Location = new System.Drawing.Point(257, 18);
-            this.btnXoadm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnXoadm.Name = "btnXoadm";
-            this.btnXoadm.Size = new System.Drawing.Size(75, 59);
-            this.btnXoadm.TabIndex = 2;
-            this.btnXoadm.Text = "Xóa";
-            this.btnXoadm.UseVisualStyleBackColor = false;
-            this.btnXoadm.Click += new System.EventHandler(this.btnXoadm_Click);
-            // 
-            // btnSuadm
-            // 
-            this.btnSuadm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnSuadm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuadm.Location = new System.Drawing.Point(147, 18);
-            this.btnSuadm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSuadm.Name = "btnSuadm";
-            this.btnSuadm.Size = new System.Drawing.Size(75, 59);
-            this.btnSuadm.TabIndex = 1;
-            this.btnSuadm.Text = "Sửa";
-            this.btnSuadm.UseVisualStyleBackColor = false;
-            this.btnSuadm.Click += new System.EventHandler(this.btnSuadm_Click);
-            // 
-            // btnthemdm
-            // 
-            this.btnthemdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnthemdm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthemdm.Location = new System.Drawing.Point(35, 18);
-            this.btnthemdm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnthemdm.Name = "btnthemdm";
-            this.btnthemdm.Size = new System.Drawing.Size(75, 59);
-            this.btnthemdm.TabIndex = 0;
-            this.btnthemdm.Text = "Thêm";
-            this.btnthemdm.UseVisualStyleBackColor = false;
-            this.btnthemdm.Click += new System.EventHandler(this.btnthemdm_Click);
             // 
             // tabBan
             // 
@@ -625,7 +527,8 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Aqua;
+            this.panel7.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel7.Controls.Add(this.btnXuatfileban);
             this.panel7.Controls.Add(this.lbloiArea);
             this.panel7.Controls.Add(this.tbArea);
             this.panel7.Controls.Add(this.label5);
@@ -642,7 +545,7 @@
             this.panel7.Controls.Add(this.lbloitablename);
             this.panel7.Controls.Add(this.tbtablename);
             this.panel7.Location = new System.Drawing.Point(4, 4);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(452, 532);
             this.panel7.TabIndex = 36;
@@ -660,7 +563,7 @@
             // 
             this.tbArea.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbArea.Location = new System.Drawing.Point(232, 165);
-            this.tbArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbArea.Margin = new System.Windows.Forms.Padding(4);
             this.tbArea.Name = "tbArea";
             this.tbArea.Size = new System.Drawing.Size(199, 30);
             this.tbArea.TabIndex = 39;
@@ -680,32 +583,10 @@
             // 
             this.tbid.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbid.Location = new System.Drawing.Point(232, 95);
-            this.tbid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbid.Margin = new System.Windows.Forms.Padding(4);
             this.tbid.Name = "tbid";
             this.tbid.Size = new System.Drawing.Size(199, 30);
             this.tbid.TabIndex = 37;
-            // 
-            // btnxoa
-            // 
-            this.btnxoa.Location = new System.Drawing.Point(312, 421);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(100, 28);
-            this.btnxoa.TabIndex = 36;
-            this.btnxoa.Text = "Xóa";
-            this.btnxoa.UseVisualStyleBackColor = true;
-            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
-            // btnsua
-            // 
-            this.btnsua.Location = new System.Drawing.Point(173, 421);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(100, 28);
-            this.btnsua.TabIndex = 35;
-            this.btnsua.Text = "Sửa";
-            this.btnsua.UseVisualStyleBackColor = true;
-            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // lbnotice1
             // 
@@ -729,17 +610,6 @@
             this.label2.TabIndex = 29;
             this.label2.Text = "Thêm Bàn";
             // 
-            // btnthem
-            // 
-            this.btnthem.Location = new System.Drawing.Point(24, 421);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(100, 28);
-            this.btnthem.TabIndex = 34;
-            this.btnthem.Text = "Thêm";
-            this.btnthem.UseVisualStyleBackColor = true;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
-            // 
             // lbarea
             // 
             this.lbarea.AutoSize = true;
@@ -755,7 +625,7 @@
             // 
             this.tbstatus.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbstatus.Location = new System.Drawing.Point(232, 338);
-            this.tbstatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbstatus.Margin = new System.Windows.Forms.Padding(4);
             this.tbstatus.Name = "tbstatus";
             this.tbstatus.Size = new System.Drawing.Size(199, 30);
             this.tbstatus.TabIndex = 33;
@@ -796,7 +666,7 @@
             // 
             this.tbtablename.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbtablename.Location = new System.Drawing.Point(232, 242);
-            this.tbtablename.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbtablename.Margin = new System.Windows.Forms.Padding(4);
             this.tbtablename.Name = "tbtablename";
             this.tbtablename.Size = new System.Drawing.Size(199, 30);
             this.tbtablename.TabIndex = 31;
@@ -805,7 +675,7 @@
             // 
             this.panel1.Controls.Add(this.dgvtable);
             this.panel1.Location = new System.Drawing.Point(464, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(709, 532);
             this.panel1.TabIndex = 35;
@@ -817,7 +687,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvtable.Location = new System.Drawing.Point(0, 0);
-            this.dgvtable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvtable.Margin = new System.Windows.Forms.Padding(4);
             this.dgvtable.Name = "dgvtable";
             this.dgvtable.Size = new System.Drawing.Size(701, 518);
             this.dgvtable.TabIndex = 1;
@@ -828,9 +698,9 @@
             this.tabDoanhThu.Controls.Add(this.pnThongKeChucNang);
             this.tabDoanhThu.Controls.Add(this.pnThongKeView);
             this.tabDoanhThu.Location = new System.Drawing.Point(4, 25);
-            this.tabDoanhThu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabDoanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.tabDoanhThu.Name = "tabDoanhThu";
-            this.tabDoanhThu.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabDoanhThu.Padding = new System.Windows.Forms.Padding(4);
             this.tabDoanhThu.Size = new System.Drawing.Size(1180, 538);
             this.tabDoanhThu.TabIndex = 1;
             this.tabDoanhThu.Text = "Doanh Thu";
@@ -840,6 +710,7 @@
             // 
             this.pnThongKeChucNang.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnThongKeChucNang.Controls.Add(this.btnxuatfilethongke);
             this.pnThongKeChucNang.Controls.Add(this.btThongKe);
             this.pnThongKeChucNang.Controls.Add(this.dtTo);
             this.pnThongKeChucNang.Controls.Add(this.dtFrom);
@@ -848,28 +719,16 @@
             this.pnThongKeChucNang.Controls.Add(this.lbThongKe2);
             this.pnThongKeChucNang.Controls.Add(this.lbThongke1);
             this.pnThongKeChucNang.Location = new System.Drawing.Point(1, 14);
-            this.pnThongKeChucNang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnThongKeChucNang.Margin = new System.Windows.Forms.Padding(4);
             this.pnThongKeChucNang.Name = "pnThongKeChucNang";
             this.pnThongKeChucNang.Size = new System.Drawing.Size(1172, 90);
             this.pnThongKeChucNang.TabIndex = 2;
-            // 
-            // btThongKe
-            // 
-            this.btThongKe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThongKe.Location = new System.Drawing.Point(540, 27);
-            this.btThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btThongKe.Name = "btThongKe";
-            this.btThongKe.Size = new System.Drawing.Size(121, 43);
-            this.btThongKe.TabIndex = 6;
-            this.btThongKe.Text = "Thống kê ";
-            this.btThongKe.UseVisualStyleBackColor = true;
-            this.btThongKe.Click += new System.EventHandler(this.btThongKe_Click);
             // 
             // dtTo
             // 
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtTo.Location = new System.Drawing.Point(177, 55);
-            this.dtTo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtTo.Margin = new System.Windows.Forms.Padding(4);
             this.dtTo.Name = "dtTo";
             this.dtTo.Size = new System.Drawing.Size(265, 22);
             this.dtTo.TabIndex = 5;
@@ -878,7 +737,7 @@
             // 
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtFrom.Location = new System.Drawing.Point(177, 12);
-            this.dtFrom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtFrom.Margin = new System.Windows.Forms.Padding(4);
             this.dtFrom.Name = "dtFrom";
             this.dtFrom.Size = new System.Drawing.Size(265, 22);
             this.dtFrom.TabIndex = 4;
@@ -898,7 +757,7 @@
             // 
             this.lbThongKe3.AutoSize = true;
             this.lbThongKe3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThongKe3.Location = new System.Drawing.Point(769, 37);
+            this.lbThongKe3.Location = new System.Drawing.Point(783, 37);
             this.lbThongKe3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbThongKe3.Name = "lbThongKe3";
             this.lbThongKe3.Size = new System.Drawing.Size(208, 23);
@@ -934,7 +793,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnThongKeView.Controls.Add(this.dvwTotal);
             this.pnThongKeView.Location = new System.Drawing.Point(-19, 111);
-            this.pnThongKeView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnThongKeView.Margin = new System.Windows.Forms.Padding(4);
             this.pnThongKeView.Name = "pnThongKeView";
             this.pnThongKeView.Size = new System.Drawing.Size(1215, 411);
             this.pnThongKeView.TabIndex = 3;
@@ -946,21 +805,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dvwTotal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvwTotal.Location = new System.Drawing.Point(9, 26);
-            this.dvwTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dvwTotal.Margin = new System.Windows.Forms.Padding(4);
             this.dvwTotal.Name = "dvwTotal";
             this.dvwTotal.Size = new System.Drawing.Size(1183, 382);
             this.dvwTotal.TabIndex = 0;
             // 
             // tabAccount
             // 
-            this.tabAccount.BackColor = System.Drawing.Color.Aqua;
+            this.tabAccount.BackColor = System.Drawing.Color.MediumTurquoise;
             this.tabAccount.Controls.Add(this.panel8);
             this.tabAccount.Controls.Add(this.panel2);
             this.tabAccount.Controls.Add(this.panel9);
             this.tabAccount.Location = new System.Drawing.Point(4, 25);
-            this.tabAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabAccount.Margin = new System.Windows.Forms.Padding(4);
             this.tabAccount.Name = "tabAccount";
-            this.tabAccount.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabAccount.Padding = new System.Windows.Forms.Padding(4);
             this.tabAccount.Size = new System.Drawing.Size(1180, 538);
             this.tabAccount.TabIndex = 2;
             this.tabAccount.Text = "Nhân viên";
@@ -968,56 +827,17 @@
             // 
             // panel8
             // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel8.Controls.Add(this.btnxuatfileNV);
             this.panel8.Controls.Add(this.btDeleteEmployee);
             this.panel8.Controls.Add(this.btEditEmployee);
             this.panel8.Controls.Add(this.btInsertEmployee);
             this.panel8.Location = new System.Drawing.Point(11, 10);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(385, 74);
+            this.panel8.Size = new System.Drawing.Size(389, 88);
             this.panel8.TabIndex = 20;
-            // 
-            // btDeleteEmployee
-            // 
-            this.btDeleteEmployee.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btDeleteEmployee.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeleteEmployee.Location = new System.Drawing.Point(315, 6);
-            this.btDeleteEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btDeleteEmployee.Name = "btDeleteEmployee";
-            this.btDeleteEmployee.Size = new System.Drawing.Size(67, 62);
-            this.btDeleteEmployee.TabIndex = 2;
-            this.btDeleteEmployee.Text = "Xóa";
-            this.btDeleteEmployee.UseVisualStyleBackColor = false;
-            this.btDeleteEmployee.Click += new System.EventHandler(this.btDeleteEmployee_Click);
-            // 
-            // btEditEmployee
-            // 
-            this.btEditEmployee.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btEditEmployee.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEditEmployee.Location = new System.Drawing.Point(153, 4);
-            this.btEditEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btEditEmployee.Name = "btEditEmployee";
-            this.btEditEmployee.Size = new System.Drawing.Size(67, 62);
-            this.btEditEmployee.TabIndex = 1;
-            this.btEditEmployee.Text = "Sửa";
-            this.btEditEmployee.UseVisualStyleBackColor = false;
-            this.btEditEmployee.Click += new System.EventHandler(this.btEditEmployee_Click);
-            // 
-            // btInsertEmployee
-            // 
-            this.btInsertEmployee.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btInsertEmployee.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInsertEmployee.Location = new System.Drawing.Point(17, 6);
-            this.btInsertEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btInsertEmployee.Name = "btInsertEmployee";
-            this.btInsertEmployee.Size = new System.Drawing.Size(67, 62);
-            this.btInsertEmployee.TabIndex = 0;
-            this.btInsertEmployee.Text = "Thêm";
-            this.btInsertEmployee.UseVisualStyleBackColor = false;
-            this.btInsertEmployee.Click += new System.EventHandler(this.btInsertEmployee_Click);
             // 
             // panel2
             // 
@@ -1035,29 +855,16 @@
             this.panel2.Controls.Add(this.txtIdEmployee);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(7, 106);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(393, 420);
             this.panel2.TabIndex = 38;
-            // 
-            // btCapTaiKhoan
-            // 
-            this.btCapTaiKhoan.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btCapTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCapTaiKhoan.Location = new System.Drawing.Point(99, 343);
-            this.btCapTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btCapTaiKhoan.Name = "btCapTaiKhoan";
-            this.btCapTaiKhoan.Size = new System.Drawing.Size(193, 43);
-            this.btCapTaiKhoan.TabIndex = 3;
-            this.btCapTaiKhoan.Text = "Cấp tài khoản";
-            this.btCapTaiKhoan.UseVisualStyleBackColor = false;
-            this.btCapTaiKhoan.Click += new System.EventHandler(this.btCapTaiKhoan_Click);
             // 
             // txtPhoneNumberEmployee
             // 
             this.txtPhoneNumberEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNumberEmployee.Location = new System.Drawing.Point(157, 271);
-            this.txtPhoneNumberEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhoneNumberEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhoneNumberEmployee.Name = "txtPhoneNumberEmployee";
             this.txtPhoneNumberEmployee.Size = new System.Drawing.Size(208, 30);
             this.txtPhoneNumberEmployee.TabIndex = 17;
@@ -1078,7 +885,7 @@
             // 
             this.txtAgeEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgeEmployee.Location = new System.Drawing.Point(157, 214);
-            this.txtAgeEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAgeEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtAgeEmployee.Name = "txtAgeEmployee";
             this.txtAgeEmployee.Size = new System.Drawing.Size(208, 30);
             this.txtAgeEmployee.TabIndex = 15;
@@ -1099,7 +906,7 @@
             // 
             this.txtAddressEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddressEmployee.Location = new System.Drawing.Point(157, 155);
-            this.txtAddressEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddressEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddressEmployee.Name = "txtAddressEmployee";
             this.txtAddressEmployee.Size = new System.Drawing.Size(208, 30);
             this.txtAddressEmployee.TabIndex = 13;
@@ -1120,7 +927,7 @@
             // 
             this.txtNamEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamEmployee.Location = new System.Drawing.Point(157, 92);
-            this.txtNamEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNamEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtNamEmployee.Name = "txtNamEmployee";
             this.txtNamEmployee.Size = new System.Drawing.Size(208, 30);
             this.txtNamEmployee.TabIndex = 11;
@@ -1141,7 +948,7 @@
             // 
             this.txtIdEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdEmployee.Location = new System.Drawing.Point(157, 20);
-            this.txtIdEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdEmployee.Name = "txtIdEmployee";
             this.txtIdEmployee.Size = new System.Drawing.Size(208, 30);
             this.txtIdEmployee.TabIndex = 9;
@@ -1166,7 +973,7 @@
             this.panel9.Controls.Add(this.txtSearchEmployee);
             this.panel9.Controls.Add(this.dgvEmployee);
             this.panel9.Location = new System.Drawing.Point(404, 6);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(772, 519);
             this.panel9.TabIndex = 37;
@@ -1175,7 +982,7 @@
             // 
             this.txtSearchEmployee.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchEmployee.Location = new System.Drawing.Point(553, 41);
-            this.txtSearchEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchEmployee.Name = "txtSearchEmployee";
             this.txtSearchEmployee.Size = new System.Drawing.Size(208, 30);
             this.txtSearchEmployee.TabIndex = 18;
@@ -1188,11 +995,343 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Location = new System.Drawing.Point(4, 100);
-            this.dgvEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.Size = new System.Drawing.Size(784, 416);
             this.dgvEmployee.TabIndex = 0;
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
+            // 
+            // btSearchThucDon
+            // 
+            this.btSearchThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btSearchThucDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSearchThucDon.Image = global::QuanLiNhaHang.Properties.Resources.find;
+            this.btSearchThucDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSearchThucDon.Location = new System.Drawing.Point(5, 14);
+            this.btSearchThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btSearchThucDon.Name = "btSearchThucDon";
+            this.btSearchThucDon.Size = new System.Drawing.Size(141, 46);
+            this.btSearchThucDon.TabIndex = 1;
+            this.btSearchThucDon.Text = "Tìm kiếm";
+            this.btSearchThucDon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSearchThucDon.UseVisualStyleBackColor = false;
+            this.btSearchThucDon.Click += new System.EventHandler(this.btSearchThucDon_Click);
+            // 
+            // btnXuatfileMenu
+            // 
+            this.btnXuatfileMenu.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnXuatfileMenu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatfileMenu.Image = global::QuanLiNhaHang.Properties.Resources.document_down_alt;
+            this.btnXuatfileMenu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnXuatfileMenu.Location = new System.Drawing.Point(290, 0);
+            this.btnXuatfileMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXuatfileMenu.Name = "btnXuatfileMenu";
+            this.btnXuatfileMenu.Size = new System.Drawing.Size(80, 78);
+            this.btnXuatfileMenu.TabIndex = 3;
+            this.btnXuatfileMenu.Text = "Xuất file";
+            this.btnXuatfileMenu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnXuatfileMenu.UseVisualStyleBackColor = false;
+            this.btnXuatfileMenu.Click += new System.EventHandler(this.btnXuatfileMenu_Click);
+            // 
+            // btDeleteThucDon
+            // 
+            this.btDeleteThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btDeleteThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeleteThucDon.Image = global::QuanLiNhaHang.Properties.Resources.delete__1_;
+            this.btDeleteThucDon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btDeleteThucDon.Location = new System.Drawing.Point(195, 0);
+            this.btDeleteThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btDeleteThucDon.Name = "btDeleteThucDon";
+            this.btDeleteThucDon.Size = new System.Drawing.Size(79, 78);
+            this.btDeleteThucDon.TabIndex = 2;
+            this.btDeleteThucDon.Text = "Xóa";
+            this.btDeleteThucDon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btDeleteThucDon.UseVisualStyleBackColor = false;
+            this.btDeleteThucDon.Click += new System.EventHandler(this.btDeleteThucDon_Click);
+            // 
+            // btEditThucDon
+            // 
+            this.btEditThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btEditThucDon.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditThucDon.Image = global::QuanLiNhaHang.Properties.Resources.edit_add;
+            this.btEditThucDon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btEditThucDon.Location = new System.Drawing.Point(95, 2);
+            this.btEditThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btEditThucDon.Name = "btEditThucDon";
+            this.btEditThucDon.Size = new System.Drawing.Size(81, 76);
+            this.btEditThucDon.TabIndex = 1;
+            this.btEditThucDon.Text = "Sửa";
+            this.btEditThucDon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btEditThucDon.UseVisualStyleBackColor = false;
+            this.btEditThucDon.Click += new System.EventHandler(this.btEditThucDon_Click);
+            // 
+            // btInsertThucDon
+            // 
+            this.btInsertThucDon.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btInsertThucDon.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInsertThucDon.Image = global::QuanLiNhaHang.Properties.Resources.note_add;
+            this.btInsertThucDon.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btInsertThucDon.Location = new System.Drawing.Point(4, 2);
+            this.btInsertThucDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btInsertThucDon.Name = "btInsertThucDon";
+            this.btInsertThucDon.Size = new System.Drawing.Size(83, 76);
+            this.btInsertThucDon.TabIndex = 0;
+            this.btInsertThucDon.Text = "Thêm";
+            this.btInsertThucDon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btInsertThucDon.UseVisualStyleBackColor = false;
+            this.btInsertThucDon.Click += new System.EventHandler(this.btInsertThucDon_Click);
+            // 
+            // btntimkiemdm
+            // 
+            this.btntimkiemdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btntimkiemdm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntimkiemdm.Image = global::QuanLiNhaHang.Properties.Resources.find;
+            this.btntimkiemdm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btntimkiemdm.Location = new System.Drawing.Point(524, 33);
+            this.btntimkiemdm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btntimkiemdm.Name = "btntimkiemdm";
+            this.btntimkiemdm.Size = new System.Drawing.Size(131, 44);
+            this.btntimkiemdm.TabIndex = 1;
+            this.btntimkiemdm.Text = "Tìm kiếm";
+            this.btntimkiemdm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btntimkiemdm.UseVisualStyleBackColor = false;
+            this.btntimkiemdm.Click += new System.EventHandler(this.btntimkiemdm_Click);
+            // 
+            // btnxuatfiledm
+            // 
+            this.btnxuatfiledm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnxuatfiledm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxuatfiledm.Image = global::QuanLiNhaHang.Properties.Resources.document_down_alt;
+            this.btnxuatfiledm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnxuatfiledm.Location = new System.Drawing.Point(308, 15);
+            this.btnxuatfiledm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnxuatfiledm.Name = "btnxuatfiledm";
+            this.btnxuatfiledm.Size = new System.Drawing.Size(73, 85);
+            this.btnxuatfiledm.TabIndex = 4;
+            this.btnxuatfiledm.Text = "Xuất file";
+            this.btnxuatfiledm.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnxuatfiledm.UseVisualStyleBackColor = false;
+            this.btnxuatfiledm.Click += new System.EventHandler(this.btnxuatfiledm_Click);
+            // 
+            // btnXoadm
+            // 
+            this.btnXoadm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnXoadm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoadm.Image = global::QuanLiNhaHang.Properties.Resources.remove;
+            this.btnXoadm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnXoadm.Location = new System.Drawing.Point(209, 15);
+            this.btnXoadm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnXoadm.Name = "btnXoadm";
+            this.btnXoadm.Size = new System.Drawing.Size(75, 85);
+            this.btnXoadm.TabIndex = 2;
+            this.btnXoadm.Text = "Xóa";
+            this.btnXoadm.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnXoadm.UseVisualStyleBackColor = false;
+            this.btnXoadm.Click += new System.EventHandler(this.btnXoadm_Click);
+            // 
+            // btnSuadm
+            // 
+            this.btnSuadm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuadm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSuadm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuadm.Image = global::QuanLiNhaHang.Properties.Resources.edit_add;
+            this.btnSuadm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSuadm.Location = new System.Drawing.Point(112, 15);
+            this.btnSuadm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSuadm.Name = "btnSuadm";
+            this.btnSuadm.Size = new System.Drawing.Size(75, 85);
+            this.btnSuadm.TabIndex = 1;
+            this.btnSuadm.Text = "Sửa";
+            this.btnSuadm.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSuadm.UseVisualStyleBackColor = false;
+            this.btnSuadm.Click += new System.EventHandler(this.btnSuadm_Click);
+            // 
+            // btnthemdm
+            // 
+            this.btnthemdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnthemdm.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthemdm.Image = global::QuanLiNhaHang.Properties.Resources.note_add;
+            this.btnthemdm.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnthemdm.Location = new System.Drawing.Point(15, 15);
+            this.btnthemdm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnthemdm.Name = "btnthemdm";
+            this.btnthemdm.Size = new System.Drawing.Size(73, 85);
+            this.btnthemdm.TabIndex = 0;
+            this.btnthemdm.Text = "Thêm";
+            this.btnthemdm.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnthemdm.UseVisualStyleBackColor = false;
+            this.btnthemdm.Click += new System.EventHandler(this.btnthemdm_Click);
+            // 
+            // btnXuatfileban
+            // 
+            this.btnXuatfileban.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatfileban.Image = global::QuanLiNhaHang.Properties.Resources.document_down_alt;
+            this.btnXuatfileban.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnXuatfileban.Location = new System.Drawing.Point(349, 421);
+            this.btnXuatfileban.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXuatfileban.Name = "btnXuatfileban";
+            this.btnXuatfileban.Size = new System.Drawing.Size(82, 80);
+            this.btnXuatfileban.TabIndex = 41;
+            this.btnXuatfileban.Text = "Xuất file";
+            this.btnXuatfileban.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnXuatfileban.UseVisualStyleBackColor = true;
+            this.btnXuatfileban.Click += new System.EventHandler(this.btnXuatfileban_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxoa.Image = global::QuanLiNhaHang.Properties.Resources.remove;
+            this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnxoa.Location = new System.Drawing.Point(243, 421);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(82, 80);
+            this.btnxoa.TabIndex = 36;
+            this.btnxoa.Text = "Xóa";
+            this.btnxoa.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // btnsua
+            // 
+            this.btnsua.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsua.Image = global::QuanLiNhaHang.Properties.Resources.edit_add;
+            this.btnsua.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnsua.Location = new System.Drawing.Point(136, 421);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(70, 80);
+            this.btnsua.TabIndex = 35;
+            this.btnsua.Text = "Sửa";
+            this.btnsua.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
+            // 
+            // btnthem
+            // 
+            this.btnthem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthem.Image = global::QuanLiNhaHang.Properties.Resources.note_add;
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnthem.Location = new System.Drawing.Point(29, 421);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(80, 80);
+            this.btnthem.TabIndex = 34;
+            this.btnthem.Text = "Thêm";
+            this.btnthem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
+            // 
+            // btnxuatfilethongke
+            // 
+            this.btnxuatfilethongke.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxuatfilethongke.Image = global::QuanLiNhaHang.Properties.Resources.document_down_alt;
+            this.btnxuatfilethongke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnxuatfilethongke.Location = new System.Drawing.Point(633, 27);
+            this.btnxuatfilethongke.Margin = new System.Windows.Forms.Padding(4);
+            this.btnxuatfilethongke.Name = "btnxuatfilethongke";
+            this.btnxuatfilethongke.Size = new System.Drawing.Size(142, 43);
+            this.btnxuatfilethongke.TabIndex = 7;
+            this.btnxuatfilethongke.Text = "Xuất file";
+            this.btnxuatfilethongke.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnxuatfilethongke.UseVisualStyleBackColor = true;
+            this.btnxuatfilethongke.Click += new System.EventHandler(this.btnxuatfilethongke_Click);
+            // 
+            // btThongKe
+            // 
+            this.btThongKe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThongKe.Image = global::QuanLiNhaHang.Properties.Resources.statistics;
+            this.btThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThongKe.Location = new System.Drawing.Point(473, 27);
+            this.btThongKe.Margin = new System.Windows.Forms.Padding(4);
+            this.btThongKe.Name = "btThongKe";
+            this.btThongKe.Size = new System.Drawing.Size(152, 43);
+            this.btThongKe.TabIndex = 6;
+            this.btThongKe.Text = "Thống kê ";
+            this.btThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btThongKe.UseVisualStyleBackColor = true;
+            this.btThongKe.Click += new System.EventHandler(this.btThongKe_Click);
+            // 
+            // btnxuatfileNV
+            // 
+            this.btnxuatfileNV.BackColor = System.Drawing.Color.Transparent;
+            this.btnxuatfileNV.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxuatfileNV.Image = global::QuanLiNhaHang.Properties.Resources.document_down_alt;
+            this.btnxuatfileNV.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnxuatfileNV.Location = new System.Drawing.Point(294, 8);
+            this.btnxuatfileNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnxuatfileNV.Name = "btnxuatfileNV";
+            this.btnxuatfileNV.Size = new System.Drawing.Size(67, 76);
+            this.btnxuatfileNV.TabIndex = 3;
+            this.btnxuatfileNV.Text = "Xuất file";
+            this.btnxuatfileNV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnxuatfileNV.UseVisualStyleBackColor = false;
+            this.btnxuatfileNV.Click += new System.EventHandler(this.btnxuatfileNV_Click);
+            // 
+            // btDeleteEmployee
+            // 
+            this.btDeleteEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btDeleteEmployee.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeleteEmployee.Image = global::QuanLiNhaHang.Properties.Resources.remove;
+            this.btDeleteEmployee.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btDeleteEmployee.Location = new System.Drawing.Point(193, 6);
+            this.btDeleteEmployee.Margin = new System.Windows.Forms.Padding(4);
+            this.btDeleteEmployee.Name = "btDeleteEmployee";
+            this.btDeleteEmployee.Size = new System.Drawing.Size(67, 78);
+            this.btDeleteEmployee.TabIndex = 2;
+            this.btDeleteEmployee.Text = "Xóa";
+            this.btDeleteEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btDeleteEmployee.UseVisualStyleBackColor = false;
+            this.btDeleteEmployee.Click += new System.EventHandler(this.btDeleteEmployee_Click);
+            // 
+            // btEditEmployee
+            // 
+            this.btEditEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btEditEmployee.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEditEmployee.Image = global::QuanLiNhaHang.Properties.Resources.edit_add;
+            this.btEditEmployee.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btEditEmployee.Location = new System.Drawing.Point(108, 8);
+            this.btEditEmployee.Margin = new System.Windows.Forms.Padding(4);
+            this.btEditEmployee.Name = "btEditEmployee";
+            this.btEditEmployee.Size = new System.Drawing.Size(67, 76);
+            this.btEditEmployee.TabIndex = 1;
+            this.btEditEmployee.Text = "Sửa";
+            this.btEditEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btEditEmployee.UseVisualStyleBackColor = false;
+            this.btEditEmployee.Click += new System.EventHandler(this.btEditEmployee_Click);
+            // 
+            // btInsertEmployee
+            // 
+            this.btInsertEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.btInsertEmployee.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInsertEmployee.Image = global::QuanLiNhaHang.Properties.Resources.note_add;
+            this.btInsertEmployee.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btInsertEmployee.Location = new System.Drawing.Point(17, 6);
+            this.btInsertEmployee.Margin = new System.Windows.Forms.Padding(4);
+            this.btInsertEmployee.Name = "btInsertEmployee";
+            this.btInsertEmployee.Size = new System.Drawing.Size(67, 78);
+            this.btInsertEmployee.TabIndex = 0;
+            this.btInsertEmployee.Text = "Thêm";
+            this.btInsertEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btInsertEmployee.UseVisualStyleBackColor = false;
+            this.btInsertEmployee.Click += new System.EventHandler(this.btInsertEmployee_Click);
+            // 
+            // btCapTaiKhoan
+            // 
+            this.btCapTaiKhoan.BackColor = System.Drawing.Color.Transparent;
+            this.btCapTaiKhoan.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapTaiKhoan.Image = global::QuanLiNhaHang.Properties.Resources.plus;
+            this.btCapTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btCapTaiKhoan.Location = new System.Drawing.Point(91, 341);
+            this.btCapTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
+            this.btCapTaiKhoan.Name = "btCapTaiKhoan";
+            this.btCapTaiKhoan.Size = new System.Drawing.Size(193, 53);
+            this.btCapTaiKhoan.TabIndex = 3;
+            this.btCapTaiKhoan.Text = "Cấp tài khoản";
+            this.btCapTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCapTaiKhoan.UseVisualStyleBackColor = false;
+            this.btCapTaiKhoan.Click += new System.EventHandler(this.btCapTaiKhoan_Click);
             // 
             // FrmAdmin
             // 
@@ -1200,7 +1339,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 567);
             this.Controls.Add(this.tabAdmin);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin ";
@@ -1332,5 +1471,10 @@
         private System.Windows.Forms.Button btCapTaiKhoan;
         private System.Windows.Forms.TextBox tbArea;
         private System.Windows.Forms.Label lbloiArea;
+        private System.Windows.Forms.Button btnxuatfiledm;
+        private System.Windows.Forms.Button btnXuatfileMenu;
+        private System.Windows.Forms.Button btnXuatfileban;
+        private System.Windows.Forms.Button btnxuatfilethongke;
+        private System.Windows.Forms.Button btnxuatfileNV;
     }
 }

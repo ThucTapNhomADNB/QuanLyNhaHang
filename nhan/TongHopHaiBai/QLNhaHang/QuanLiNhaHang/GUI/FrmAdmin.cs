@@ -1,5 +1,6 @@
 ﻿using QuanLiNhaHang.DAL;
 using QuanLiNhaHang.ENTITY;
+using QuanLiNhaHang.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -703,6 +704,31 @@ namespace QuanLiNhaHang.GUI
             string searchtxt = txttimkiemdm.Text;
             MenuCategoryDAL mncDAL = new MenuCategoryDAL();
             dgvmenucate.DataSource = mncDAL.searchMenuCate(searchtxt);
+        }
+
+        private void btnxuatfiledm_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvmenucate);
+        }
+
+        private void btnXuatfileMenu_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvmenu);
+        }
+
+        private void btnXuatfileban_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvtable);
+        }
+
+        private void btnxuatfilethongke_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dvwTotal);
+        }
+
+        private void btnxuatfileNV_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvEmployee);
         }
     }
 }

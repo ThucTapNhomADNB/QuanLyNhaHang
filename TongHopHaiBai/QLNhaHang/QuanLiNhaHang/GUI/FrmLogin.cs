@@ -59,10 +59,5 @@ namespace QuanLiNhaHang.GUI
                 MessageBox.Show("tài khoản không tồn tại", "Lỗi đăng nhâp");
             }
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

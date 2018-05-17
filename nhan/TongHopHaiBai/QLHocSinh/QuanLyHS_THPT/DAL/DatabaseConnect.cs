@@ -12,7 +12,7 @@ namespace QuanLyHS_THPT.DAL
     class DatabaseConnect
     {
         public SqlConnection dataConection() {
-             return new SqlConnection(@"Data Source=DESKTOP-O0NBROK\SQLEXPRESS01;Initial Catalog=QLHOCSINH2;Integrated Security=True");
+             return new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=QLHOCSINH;Integrated Security=True");
         }
         public DataTable GETdata(string querySQL)
         {

@@ -1,5 +1,6 @@
 ﻿using QuanLyHS_THPT.DAL;
 using QuanLyHS_THPT.ENTITY;
+using QuanLyHS_THPT.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -203,6 +204,11 @@ namespace QuanLyHS_THPT.GUI
             string searchtxt = tbTimKIem.Text;
             GiaoVienDAL gvDAL = new GiaoVienDAL();
             dgvGiaoVien.DataSource = gvDAL.searchGV(searchtxt);
+        }
+
+        private void btnXuatfileGV_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvGiaoVien);
         }
     }
 }
