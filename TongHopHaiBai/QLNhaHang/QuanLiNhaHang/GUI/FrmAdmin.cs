@@ -1,5 +1,6 @@
 ﻿using QuanLiNhaHang.DAL;
 using QuanLiNhaHang.ENTITY;
+using QuanLiNhaHang.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -357,8 +358,8 @@ namespace QuanLiNhaHang.GUI
         private void txtSearchMenu_TextChanged(object sender, EventArgs e)
         {
             string searchtxt = txtSearchMenu.Text;
-            MenuCategoryDAL mncDAL = new MenuCategoryDAL();
-            dgvmenu.DataSource = mncDAL.searchMenuCate(searchtxt);
+            MenuDAL mncDAL = new MenuDAL();
+            dgvmenu.DataSource = mncDAL.searchMenu(searchtxt);
         }
 
         //***********************************************************
@@ -696,6 +697,38 @@ namespace QuanLiNhaHang.GUI
             string nameEmployee = txtSearchEmployee.Text;
             EmployeeDAL empDAL = new EmployeeDAL();
             dgvEmployee.DataSource = empDAL.searchEmployee(nameEmployee);
+        }
+
+        private void txttimkiemdm_TextChanged(object sender, EventArgs e)
+        {
+            string searchtxt = txttimkiemdm.Text;
+            MenuCategoryDAL mncDAL = new MenuCategoryDAL();
+            dgvmenucate.DataSource = mncDAL.searchMenuCate(searchtxt);
+        }
+
+        private void btnxuatfiledm_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvmenucate);
+        }
+
+        private void btnXuatfileMenu_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvmenu);
+        }
+
+        private void btnXuatfileban_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvtable);
+        }
+
+        private void btnxuatfilethongke_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dvwTotal);
+        }
+
+        private void btnxuatfileNV_Click(object sender, EventArgs e)
+        {
+            file.ExportToExcel(dgvEmployee);
         }
     }
 }

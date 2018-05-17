@@ -186,7 +186,14 @@ namespace QuanLiNhaHang.GUI
         private void btThanhToan_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show( table.TableName+ " đã thanh toán số tiền là  : "+ total, "Thông báo");
+            if (Convert.ToInt32(lbSoDu.Text) >= 0)
+            {
+                MessageBox.Show(table.TableName + " đã thanh toán số tiền là  : " + total + "." + " Tiền thừa là: " + Convert.ToInt32(lbSoDu.Text), "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show(table.TableName + " chưa thanh toán" + " . " + " Còn thiếu" + " " +((-1) * Convert.ToInt32(lbSoDu.Text)));
+            }
             // gọi proc thanh toan 
 
             TableDAL tableDAL = new TableDAL();
